@@ -10,10 +10,10 @@ const { execSync } = require('child_process');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-const supabase = createClient(
-  process.env.SUPABASE_URL || '',
-  process.env.SUPABASE_SERVICE_KEY || ''
-);
+let supabase = null;
+if (process.env.SUPABASE_URL && process.env.SUPABASE_URL !== 'https://placeholder.supabase.co') {
+  supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY || '');
+}
 
 let stripe;
 try {
@@ -37,7 +37,7 @@ app.post('/api/stripe/webhook', express.raw({ type: 'application/json' }), async
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object;
     const userId = session.metadata?.user_id;
-    if (userId) {
+    if (userId && supabase) {
       await supabase.from('subscriptions').upsert({
         user_id: userId,
         stripe_customer_id: session.customer,
@@ -48,7 +48,7 @@ app.post('/api/stripe/webhook', express.raw({ type: 'application/json' }), async
     }
   }
 
-  if (event.type === 'customer.subscription.deleted') {
+  if (event.type === 'customer.subscription.deleted' && supabase) {
     const sub = event.data.object;
     await supabase.from('subscriptions')
       .update({ status: 'cancelled' })
@@ -83,8 +83,11 @@ app.post('/api/checkout', async (req, res) => {
   }
 });
 
+const noDb = (res) => res.status(503).json({ error: 'Database not configured' });
+
 // Check subscription status
 app.get('/api/subscription/:userId', async (req, res) => {
+  if (!supabase) return res.json({ active: false, data: null });
   const { data } = await supabase.from('subscriptions')
     .select('status, current_period_end')
     .eq('user_id', req.params.userId)
@@ -94,6 +97,7 @@ app.get('/api/subscription/:userId', async (req, res) => {
 
 // Save a mock draft
 app.post('/api/drafts', async (req, res) => {
+  if (!supabase) return noDb(res);
   const { userId, mode, teamAbbr, overallGrade, results, tradeLog } = req.body;
   const { data, error } = await supabase.from('mock_drafts').insert({
     user_id: userId, mode, team_abbr: teamAbbr,
@@ -105,6 +109,7 @@ app.post('/api/drafts', async (req, res) => {
 
 // Get user's draft history
 app.get('/api/drafts/:userId', async (req, res) => {
+  if (!supabase) return res.json([]);
   const { data, error } = await supabase.from('mock_drafts')
     .select('id, created_at, mode, team_abbr, overall_grade')
     .eq('user_id', req.params.userId)
@@ -116,6 +121,7 @@ app.get('/api/drafts/:userId', async (req, res) => {
 
 // Get a specific draft
 app.get('/api/drafts/detail/:id', async (req, res) => {
+  if (!supabase) return noDb(res);
   const { data, error } = await supabase.from('mock_drafts')
     .select('*').eq('id', req.params.id).single();
   if (error) return res.status(500).json({ error: error.message });
@@ -124,6 +130,7 @@ app.get('/api/drafts/detail/:id', async (req, res) => {
 
 // Delete a draft
 app.delete('/api/drafts/:id', async (req, res) => {
+  if (!supabase) return noDb(res);
   const { error } = await supabase.from('mock_drafts').delete().eq('id', req.params.id);
   if (error) return res.status(500).json({ error: error.message });
   res.json({ success: true });
