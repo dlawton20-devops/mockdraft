@@ -1,0 +1,28 @@
+{
+  "name": "mockdraft",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "extract": "node scripts/extract-seed.js",
+    "ml": "node scripts/ml-combine-impact.js",
+    "update": "node scripts/update-data.js",
+    "data": "node scripts/extract-seed.js && node scripts/ml-combine-impact.js && node scripts/update-data.js",
+    "import-combine": "node scripts/import-combine.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.98.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "json5": "^2.2.3",
+    "node-cron": "^4.2.1",
+    "stripe": "^20.4.0",
+    "xml2js": "^0.6.2"
+  }
+}

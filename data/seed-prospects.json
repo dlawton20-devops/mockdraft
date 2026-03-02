@@ -1,0 +1,1746 @@
+[
+  {
+    "name": "Fernando Mendoza",
+    "pos": "QB",
+    "school": "Indiana",
+    "grade": 97,
+    "height": "6-5",
+    "weight": 225,
+    "bio": "Mendoza is a very accurate thrower with excellent size, toughness and athleticism. He operates well out of shotgun and leans heavily on the RPO game with fast hands and good decisions. His size, arm talent and competitive nature draw comparisons to Matt Ryan.",
+    "strengths": [
+      "Elite arm talent and accuracy on all three levels",
+      "Extremely tough — absorbs big hits in the pocket",
+      "Excellent size at 6-5, 225 with enough athleticism",
+      "Clutch performer in big moments"
+    ],
+    "weaknesses": [
+      "Holds the ball too long hunting big plays",
+      "Limited experience outside RPO-heavy system",
+      "Needs to improve anticipation on NFL throws"
+    ]
+  },
+  {
+    "name": "Jeremiyah Love",
+    "pos": "RB",
+    "school": "Notre Dame",
+    "grade": 94,
+    "height": "6-0",
+    "weight": 214,
+    "bio": "Love is a dynamic weapon as a runner and receiver. He explodes to and through the hole with elite speed to capture the corner. His 4.36 forty at the 2026 Combine validated his elite speed — one analyst called him \"#1 overall player on the board.\" Electric spin move and rare ability to make defenders miss.",
+    "strengths": [
+      "Official 4.36 forty (2nd fastest RB at combine)",
+      "Home run hitter who can score from anywhere",
+      "Exceptional receiver — 64 career catches",
+      "Electric spin move and elusiveness"
+    ],
+    "weaknesses": [
+      "Runs high and narrow on inside runs",
+      "Doesn't always let blocks develop",
+      "Pass protection still developing"
+    ],
+    "combine": {
+      "forty": 4.36,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "David Bailey",
+    "pos": "EDGE",
+    "school": "Texas Tech",
+    "grade": 95,
+    "height": "6-4",
+    "weight": 252,
+    "bio": "Bailey is an ultra-explosive edge rusher with outstanding production. His 4.50 forty and 10'9\" broad jump at the 2026 Combine drew raves — scouts said he \"performed like a bona fide top-5 pick.\" His game is all about get-off and winning early in the down with a devastating dip/rip move.",
+    "strengths": [
+      "Official 4.50 forty — elite get-off confirmed",
+      "Elite speed-to-power conversion",
+      "Devastating dip/rip and inside spin",
+      "Outstanding production vs quality competition"
+    ],
+    "weaknesses": [
+      "Inconsistent against the run",
+      "Can struggle holding point of attack",
+      "Speed-to-power still developing"
+    ],
+    "combine": {
+      "forty": 4.5,
+      "bench": null,
+      "vert": null,
+      "broad": 129,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Arvell Reese",
+    "pos": "EDGE",
+    "school": "Ohio State",
+    "grade": 95,
+    "height": "6-4",
+    "weight": 243,
+    "bio": "Reese is a fluid and explosive athlete Ohio State used as a chess piece. His 4.47 forty at the 2026 Combine featured the 6th best 10-yard split (1.58) all-time among edge rushers, confirming elite first-step explosion. He projects as a top-5 pass rusher with elite speed, bend and the ability to overpower blockers.",
+    "strengths": [
+      "Official 4.47 forty — 6th best 10-yd split all-time for EDGE",
+      "Versatile — plays multiple positions",
+      "Matches and mirrors TEs/RBs in coverage",
+      "Elite chase speed from the back side"
+    ],
+    "weaknesses": [
+      "Lacks a fully polished rush plan",
+      "Can be late off the snap",
+      "Still learning consistent leverage"
+    ],
+    "combine": {
+      "forty": 4.47,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Sonny Styles",
+    "pos": "LB",
+    "school": "Ohio State",
+    "grade": 94,
+    "height": "6-5",
+    "weight": 244,
+    "bio": "Styles is a tall, long and rangy linebacker who transitioned from safety. Historic 2026 Combine: 43.5\" vertical (best ever for LB), 4.46 forty (fastest among LBs), 11'2\" broad jump. Elite athlete with Fred Warner-level instincts. Now in top-5 conversation.",
+    "strengths": [
+      "Historic combine — 43.5\" vert, 4.46 forty, 11'2\" broad",
+      "Outstanding coverage — carries slot WRs and mirrors TEs",
+      "Explosive blitzer who overwhelms RBs",
+      "Elite range and instincts vs the run"
+    ],
+    "weaknesses": [
+      "Still refining play strength at POA",
+      "Less experience reading run keys",
+      "Can get caught when blocks arrive quickly"
+    ],
+    "combine": {
+      "forty": 4.46,
+      "bench": null,
+      "vert": 43.5,
+      "broad": 134,
+      "cone": 7.09,
+      "shuttle": 4.26,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Rueben Bain Jr.",
+    "pos": "EDGE",
+    "school": "Miami",
+    "grade": 94,
+    "height": "6-2",
+    "weight": 255,
+    "bio": "Bain is a thick, square edge rusher whose tape is littered with disruption. At the 2026 Combine he skipped athletic testing but measured at just 30 7/8\" arm length — 4th shortest among edge rushers since 1999 — raising legitimate ceiling questions vs long-armed NFL tackles. He wins with leverage, power and an unrelenting motor.",
+    "strengths": [
+      "Wins with leverage, power and polish",
+      "Nasty chop/rip and Euro step moves",
+      "Ragdolls TEs with unrelenting motor",
+      "Takes over games in big moments"
+    ],
+    "weaknesses": [
+      "30 7/8\" arms — 4th shortest EDGE since 1999 (ceiling concern)",
+      "Lacks elite get-off speed",
+      "Not a dynamic athlete in space"
+    ]
+  },
+  {
+    "name": "Carnell Tate",
+    "pos": "WR",
+    "school": "Ohio State",
+    "grade": 93,
+    "height": "6-2",
+    "weight": 195,
+    "bio": "Tate is a tall, long wideout with outstanding tape but his 4.54 forty at the 2026 Combine was a significant disappointment. Bills GM Brandon Beane said \"He's pretty slow.\" He also skipped positional drills. His pro day will be crucial. Strong hands and beautiful deep-ball tracking remain elite.",
+    "strengths": [
+      "Excellent vertical threat who tracks deep balls",
+      "Strong hands and reliable in traffic",
+      "Outstanding suddenness to beat press",
+      "Extra gear when ball is in the air"
+    ],
+    "weaknesses": [
+      "4.54 forty raised serious speed questions — stock down",
+      "Skipped positional drills at combine (pro day critical)",
+      "Not exceptionally dynamic after catch"
+    ],
+    "combine": {
+      "forty": 4.54,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Mansoor Delane",
+    "pos": "CB",
+    "school": "LSU",
+    "grade": 93,
+    "height": "6-1",
+    "weight": 190,
+    "bio": "Delane is one of the most consistent players in the class. Extremely loose and fluid in coverage with the tools to match up with every style of receiver.",
+    "strengths": [
+      "Elite fluidity and change of direction",
+      "Adept at press with re-route and mirror",
+      "Physical, reliable tackler in run support",
+      "Instinctive in zone with outstanding awareness"
+    ],
+    "weaknesses": [
+      "Could be more aggressive with ball production",
+      "Doesn't create many turnovers",
+      "Can be slow reacting to double moves"
+    ]
+  },
+  {
+    "name": "Caleb Downs",
+    "pos": "S",
+    "school": "Ohio State",
+    "grade": 94,
+    "height": "6-0",
+    "weight": 205,
+    "bio": "Downs is a versatile safety with outstanding instincts. Excels against the run, dependable tackler, handles communication. Coaches rave about his intelligence and leadership.",
+    "strengths": [
+      "Versatile — nickel, strong safety, box",
+      "Outstanding instincts and intelligence",
+      "Excellent blitzer with timing and feel",
+      "Plug-and-play starter who elevates others"
+    ],
+    "weaknesses": [
+      "Lacks elite \"wow\" athletic traits",
+      "Limited ball production — 6 career INTs",
+      "Doesn't have true center-field range"
+    ]
+  },
+  {
+    "name": "Makai Lemon",
+    "pos": "WR",
+    "school": "USC",
+    "grade": 92,
+    "height": "5-11",
+    "weight": 195,
+    "bio": "Lemon is a wideout with a running back's body and linebacker's temperament. Wins with quickness, understands tempo, ultra-competitive after the catch. Amon-Ra St. Brown comparisons are warranted.",
+    "strengths": [
+      "Outstanding slot receiver with elite quickness",
+      "Plays bigger than 5-11 — wins contested catches",
+      "Ultra-competitive after catch, breaks tackles",
+      "Complete route runner with zone feel"
+    ],
+    "weaknesses": [
+      "Limited size may hurt outside",
+      "Not a true deep threat",
+      "Could struggle vs elite press"
+    ]
+  },
+  {
+    "name": "Olaivavega Ioane",
+    "pos": "IOL",
+    "school": "Penn State",
+    "grade": 92,
+    "height": "6-3",
+    "weight": 315,
+    "bio": "Ioane was a dominant left guard with a thick build and outstanding strength. In the run game he latches, runs his feet and finishes. Tremendous upper torque.",
+    "strengths": [
+      "Outstanding strength and power at POA",
+      "Tremendous upper torque to toss defenders",
+      "Excellent awareness on stunts and games",
+      "Dominant run blocker with nasty temperament"
+    ],
+    "weaknesses": [
+      "Occasionally loses against speed",
+      "Limited to guard — no tackle versatility",
+      "Needs to improve lateral mobility"
+    ]
+  },
+  {
+    "name": "Francis Mauigoa",
+    "pos": "OT",
+    "school": "Miami",
+    "grade": 91,
+    "height": "6-5",
+    "weight": 320,
+    "bio": "Mauigoa is a big, powerful right tackle with a massive lower body and firm base. Patient with his punch, strong hands to steer and control. Immediately dominant in the run game.",
+    "strengths": [
+      "Massive lower body provides elite anchor",
+      "Can uproot and displace in run game",
+      "Fluid mover with strong controlling hands",
+      "Projects as dominant run blocker"
+    ],
+    "weaknesses": [
+      "Average foot quickness out of stance",
+      "Struggles redirecting at second level",
+      "Needs refinement vs speed rushers"
+    ]
+  },
+  {
+    "name": "Jermod McCoy",
+    "pos": "CB",
+    "school": "Tennessee",
+    "grade": 91,
+    "height": "6-0",
+    "weight": 188,
+    "bio": "McCoy had an outstanding 2024 season but missed 2025 with an ACL tear. At his best in press coverage with elite ball skills and ability to elevate.",
+    "strengths": [
+      "Elite press technique with excellent balance",
+      "Outstanding ball skills — elevates and makes plays",
+      "Good speed and recovery to mirror",
+      "Sets traps in zone with sink-and-recover"
+    ],
+    "weaknesses": [
+      "Coming off torn ACL — missed full 2025",
+      "Lacks physicality in run support",
+      "Struggled vs Jeremiah Smith in playoff game"
+    ]
+  },
+  {
+    "name": "Spencer Fano",
+    "pos": "OT",
+    "school": "Utah",
+    "grade": 91,
+    "height": "6-5",
+    "weight": 315,
+    "bio": "Fano measured at 6'6\", 302 lbs at the 2026 Combine with a 5.05 forty. Excellent size, strength and quickness. Easily covers up speed rushers and stalls bull rushers with core strength. Outstanding play temperament and consistently regarded as a top OT prospect.",
+    "strengths": [
+      "Quick to cover up speed rushers",
+      "Excellent core strength and knee bend",
+      "Explosive run blocker who latches and dumps",
+      "Quick to climb and wall off LBs"
+    ],
+    "weaknesses": [
+      "5.05 forty — average lateral quickness for OT at his size",
+      "Occasionally oversets vs inside counters",
+      "Still developing as a pass protector"
+    ],
+    "combine": {
+      "forty": 5.05,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Emmanuel McNeil-Warren",
+    "pos": "S",
+    "school": "Toledo",
+    "grade": 90,
+    "height": "6-2",
+    "weight": 210,
+    "bio": "McNeil-Warren is a tall safety with fantastic production. At the 2026 Combine he ran a 4.52 forty with a 35.5\" vertical and inconsistent drills — his athletic profile didn't stand out among an elite safety class. Stock down. His small-school tape still flashes Pro Bowl potential.",
+    "strengths": [
+      "Outstanding ball production and playmaking on tape",
+      "Physical striker with big hits vs run",
+      "Fluid change of direction in coverage",
+      "Versatile deep/box role"
+    ],
+    "weaknesses": [
+      "2026 Combine — 4.52 forty underwhelmed (stock down)",
+      "Inconsistent drill performance vs elite safety class",
+      "Small-school competition questions"
+    ],
+    "combine": {
+      "forty": 4.52,
+      "bench": null,
+      "vert": 35.5,
+      "broad": 122,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Kenyon Sadiq",
+    "pos": "TE",
+    "school": "Oregon",
+    "grade": 90,
+    "height": "6-2",
+    "weight": 245,
+    "bio": "Sadiq broke the all-time NFL Combine record for tight ends with a 4.39 forty — surpassing Vernon Davis's 4.40 from 2006. He added a 43.5\" vertical and 11'1\" broad jump. He is the clear TE1 in this class and a top-20 pick. Explosive release and rare speed at the position.",
+    "strengths": [
+      "2026 Combine TE record — 4.39 forty (surpassed Vernon Davis)",
+      "43.5\" vertical and 11'1\" broad jump — elite combine trio",
+      "Dynamic run-after-catch on screens",
+      "Versatile alignment — attached, slot, backfield"
+    ],
+    "weaknesses": [
+      "Lacks ideal height for TE",
+      "Inconsistent hands — concentration drops",
+      "Skipped on-field drills after testing (some scouts noted concern)"
+    ],
+    "combine": {
+      "forty": 4.39,
+      "bench": null,
+      "vert": 43.5,
+      "broad": 133,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Jordyn Tyson",
+    "pos": "WR",
+    "school": "Arizona State",
+    "grade": 90,
+    "height": "6-1",
+    "weight": 195,
+    "bio": "Tyson is an explosive receiver with fluid movement and creative route-running. Tracks deep balls with ease and can hover waiting for the ball.",
+    "strengths": [
+      "Elite deep-ball tracking",
+      "Fluid with creative route-running",
+      "Outstanding acceleration when ball is in air",
+      "Effective after catch with wiggle and speed"
+    ],
+    "weaknesses": [
+      "Durability issues throughout college",
+      "Slight frame — may need more mass",
+      "Inconsistent against physical press"
+    ]
+  },
+  {
+    "name": "Denzel Boston",
+    "pos": "WR",
+    "school": "Washington",
+    "grade": 89,
+    "height": "6-3",
+    "weight": 210,
+    "bio": "Boston is a big-framed wideout with exceptional ball skills. Huge catch radius, plays above the rim in the red zone. Courtland Sutton comparisons.",
+    "strengths": [
+      "Outstanding ball winner with huge catch radius",
+      "Physical after the catch",
+      "Red zone weapon who plays above the rim",
+      "Powers through press coverage"
+    ],
+    "weaknesses": [
+      "Lacks elite separation speed",
+      "Not a dynamic route runner underneath",
+      "Relies more on physicality than finesse"
+    ]
+  },
+  {
+    "name": "Omar Cooper Jr.",
+    "pos": "WR",
+    "school": "Indiana",
+    "grade": 89,
+    "height": "6-1",
+    "weight": 200,
+    "bio": "Cooper ran a 4.42 forty at the 2026 Combine and earned a bump into Daniel Jeremiah's top-20 (No. 19). Strong, reliable and fearless over the middle — his game-winner vs Penn State exemplifies his competitive DNA. Fernando Mendoza's top target at Indiana.",
+    "strengths": [
+      "2026 Combine — 4.42 forty; Jeremiah ranked No. 19 post-combine",
+      "Fearless over the middle — combat catches",
+      "Power to break tackles after catch",
+      "Elevates and wins contested catches"
+    ],
+    "weaknesses": [
+      "Not an elite separator",
+      "Limited deep-threat ability",
+      "Needs more consistency in releases"
+    ],
+    "combine": {
+      "forty": 4.42,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Akheem Mesidor",
+    "pos": "EDGE",
+    "school": "Miami",
+    "grade": 89,
+    "height": "6-3",
+    "weight": 265,
+    "bio": "Mesidor was highly productive with ideal frame, relentless motor and pass-rush instincts. His game is about power — shakes, bulls, pushes and pulls for pressures.",
+    "strengths": [
+      "Powerful shake/bull move off the edge",
+      "Relentless motor and hand usage",
+      "Ideal frame and length",
+      "Dominant vs TEs in run defense"
+    ],
+    "weaknesses": [
+      "Lacks elite burst and speed",
+      "Can't consistently win with speed",
+      "Needs wider pass-rush repertoire"
+    ]
+  },
+  {
+    "name": "Cashius Howell",
+    "pos": "EDGE",
+    "school": "Texas A&M",
+    "grade": 88,
+    "height": "6-2",
+    "weight": 248,
+    "bio": "Howell impressed at the 2026 Combine with a 4.59 forty despite his compact frame — validators of his elite twitch. Undersized but with outstanding tenacity and production. Wins with speed, power or instinctive counters. Plays with violence and awareness.",
+    "strengths": [
+      "2026 Combine — 4.59 forty at 248 lbs validates elite twitch",
+      "Outstanding twitch and counters",
+      "Explosive gap shooter vs the run",
+      "Plays with violence and high effort"
+    ],
+    "weaknesses": [
+      "Undersized — lacks ideal length",
+      "May struggle at POA vs bigger tackles",
+      "Needs to prove game translates without ideal size"
+    ],
+    "combine": {
+      "forty": 4.59,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "CJ Allen",
+    "pos": "LB",
+    "school": "Georgia",
+    "grade": 88,
+    "height": "6-1",
+    "weight": 235,
+    "bio": "Allen is productive and intelligent, plays bigger than his size. Explosive striker with high tackling batting average. Georgia staff raves about his character and leadership.",
+    "strengths": [
+      "Outstanding run-game instincts and effort",
+      "Explosive striker with reliable tackling",
+      "Instinctive zone dropper",
+      "Elite character and leadership"
+    ],
+    "weaknesses": [
+      "Tightness shows up in man coverage",
+      "Doesn't have elite sideline-to-sideline range",
+      "Needs to improve shedding OL blocks"
+    ]
+  },
+  {
+    "name": "Dillon Thieneman",
+    "pos": "S",
+    "school": "Oregon",
+    "grade": 88,
+    "height": "6-1",
+    "weight": 205,
+    "bio": "Thieneman's 2026 Combine performance locked in his first-round status. He ran a 4.35 forty (4th fastest safety), posted a 41\" vertical, and had a 1.52 10-yard split. Multiple analysts now project him as a top-20 pick. The tape-to-testing translation is elite — a versatile chess piece in any scheme.",
+    "strengths": [
+      "2026 Combine — 4.35 forty (4th fastest S), 41\" vert, 1.52 10-yd split",
+      "Locked in as first-round pick post-combine",
+      "Fluid change of direction in slot",
+      "Trusts eyes and explodes into the alley"
+    ],
+    "weaknesses": [
+      "Occasional fly-by missed tackles",
+      "Doesn't always break down in open field",
+      "Could be more physical at POA"
+    ],
+    "combine": {
+      "forty": 4.35,
+      "bench": null,
+      "vert": 41,
+      "broad": 125,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Blake Miller",
+    "pos": "OT",
+    "school": "Clemson",
+    "grade": 87,
+    "height": "6-6",
+    "weight": 318,
+    "bio": "Miller is an iron man — 54 starts at RT. High school wrestler with ideal size, length and strength. His 5.18 forty at the 2026 Combine was below average for tackles but acceptable given his 6'6\", 317 lb frame. Latches and controls with strong hands. An anchor RT at the next level.",
+    "strengths": [
+      "Ideal size and length for NFL RT",
+      "Strong hands that latch and control",
+      "Can sink and anchor vs power",
+      "Outstanding experience — 54 starts"
+    ],
+    "weaknesses": [
+      "5.18 forty — limited athleticism for LT consideration",
+      "Struggles to redirect in space",
+      "Limited left tackle upside"
+    ],
+    "combine": {
+      "forty": 5.18,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Monroe Freeling",
+    "pos": "OT",
+    "school": "Georgia",
+    "grade": 87,
+    "height": "6-6",
+    "weight": 310,
+    "bio": "Freeling has ideal size, bend and agility for LT. Quick out of stance, bends easily and redirects vs counters. Excels on combo blocks. Playing his best late in the year.",
+    "strengths": [
+      "Ideal size and agility for LT",
+      "Excellent combo blocker",
+      "Smooth redirection vs counters",
+      "High upside with room to improve"
+    ],
+    "weaknesses": [
+      "Needs to add core strength",
+      "Gets tugged when defenders reach his chest",
+      "Battled injuries in 2025"
+    ]
+  },
+  {
+    "name": "Colton Hood",
+    "pos": "CB",
+    "school": "Tennessee",
+    "grade": 87,
+    "height": "5-11",
+    "weight": 190,
+    "bio": "Hood has excellent play speed and toughness. Patient in press, fluid to turn and mirror. Consistently in position and willing vs the run.",
+    "strengths": [
+      "Excellent play speed and fluid COD",
+      "Patient and balanced in press",
+      "Physical and reliable tackler",
+      "Consistently in position on deep routes"
+    ],
+    "weaknesses": [
+      "Average size may limit outside matchups",
+      "Gets grabby when ball is in the air",
+      "Limited ball production"
+    ]
+  },
+  {
+    "name": "Lee Hunter",
+    "pos": "DT",
+    "school": "Texas Tech",
+    "grade": 86,
+    "height": "6-2",
+    "weight": 315,
+    "bio": "Hunter is a thick, wide-bodied DT dominant against the run. Can bend and leverage single blocks then chuck them aside. Dominant in CFP game vs Oregon.",
+    "strengths": [
+      "Dominant run defender at POA",
+      "Outstanding lateral range for size",
+      "High floor as run stuffer",
+      "Elite potential shown in CFP game"
+    ],
+    "weaknesses": [
+      "Raw as a pass rusher — too upright",
+      "Needs to improve get-off on passing downs",
+      "Limited pass-rush plan"
+    ]
+  },
+  {
+    "name": "Keldric Faulk",
+    "pos": "EDGE",
+    "school": "Auburn",
+    "grade": 91,
+    "height": "6-5",
+    "weight": 265,
+    "bio": "Faulk is a long, versatile edge defender with ideal size and frame for the NFL. He skipped the 40-yard dash at the combine but posted a 35\" vertical and 9'9\" broad jump in athletic testing and impressed in on-field drills. His length, energy and character have made him a consensus top-12 prospect.",
+    "strengths": [
+      "Ideal frame and length for NFL edge",
+      "Loose, fluid — plays multiple positions",
+      "Outstanding run defense holding POA",
+      "High motor with relentless effort"
+    ],
+    "weaknesses": [
+      "Skipped the 40-yard dash (pro day will matter)",
+      "Needs more polished pass-rush plan",
+      "Bend around the arc could improve"
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": 35,
+      "broad": 117,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Kadyn Proctor",
+    "pos": "OT",
+    "school": "Alabama",
+    "grade": 86,
+    "height": "6-7",
+    "weight": 335,
+    "bio": "Proctor is enormous with excellent feet for his size. Can uncoil hips and displace defenders. Highest upside of any blocker in the class.",
+    "strengths": [
+      "Massive frame with rare athleticism",
+      "Uncoils hips to displace in run game",
+      "Agile enough to play tackle at 6-7, 335",
+      "Highest upside blocker in the class"
+    ],
+    "weaknesses": [
+      "Needs to manage weight",
+      "Occasionally reacts late off snap",
+      "Can be beaten by quick inside moves"
+    ]
+  },
+  {
+    "name": "Avieon Terrell",
+    "pos": "CB",
+    "school": "Clemson",
+    "grade": 85,
+    "height": "5-10",
+    "weight": 185,
+    "bio": "Terrell skipped the 40 at the combine but posted a 34\" vertical and 10'3\" broad jump and impressed in on-field drills. Projects best as an NFL nickel with feisty, competitive instincts. Stellar blitzer with quick feet and smooth COD.",
+    "strengths": [
+      "Elite quickness and COD for slot",
+      "Aggressive and physical in run support",
+      "Stellar blitzer with timing",
+      "Impressive combine on-field drills"
+    ],
+    "weaknesses": [
+      "Undersized — projects as nickel only",
+      "Struggles outside on go balls",
+      "Gets walled off by bigger WRs"
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": 34,
+      "broad": 123,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Caleb Lomu",
+    "pos": "OT",
+    "school": "Utah",
+    "grade": 85,
+    "height": "6-6",
+    "weight": 305,
+    "bio": "Lomu has an ideal frame with room to add weight. Stays square, reworks hands well, excellent awareness vs stunts.",
+    "strengths": [
+      "Ideal frame with room for growth",
+      "Excellent awareness vs stunts/games",
+      "Stays square and reworks hands",
+      "Outstanding technique and fundamentals"
+    ],
+    "weaknesses": [
+      "Lacks knock-back power in run game",
+      "Needs to add significant core strength",
+      "Plays a bit upright in pass pro"
+    ]
+  },
+  {
+    "name": "T.J. Parker",
+    "pos": "EDGE",
+    "school": "Clemson",
+    "grade": 85,
+    "height": "6-4",
+    "weight": 260,
+    "bio": "Parker had 11 sacks in 2024 but production dropped to 5 in 2025. At the 2026 Combine he ran a 4.68 forty with a 34\" vertical and 10'0\" broad jump — respectable but not elite. Rugged pass rusher with powerful shake/bull. Strong Senior Bowl performance keeps him in day-2 range.",
+    "strengths": [
+      "Powerful shake/bull off the edge",
+      "Versatile — rushes inside over guards",
+      "Generates knock-back power at POA",
+      "Strong Senior Bowl showing"
+    ],
+    "weaknesses": [
+      "Production dropped significantly in 2025",
+      "4.68 forty — lacks elite burst outside",
+      "Not dynamic in space"
+    ],
+    "combine": {
+      "forty": 4.68,
+      "bench": null,
+      "vert": 34,
+      "broad": 120,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "KC Concepcion",
+    "pos": "WR",
+    "school": "Texas A&M",
+    "grade": 84,
+    "height": "6-0",
+    "weight": 185,
+    "bio": "Concepcion has elite burst and speed that jumps off the screen. Dynamic with ball in hands, immediate catch-to-run transition.",
+    "strengths": [
+      "Elite burst and speed off snap",
+      "Dynamic run-after-catch",
+      "Immediate catch-to-run transition",
+      "Creates massive separation"
+    ],
+    "weaknesses": [
+      "Inconsistent hands — concentration drops",
+      "Undersized frame",
+      "Needs to be more dependable catcher"
+    ]
+  },
+  {
+    "name": "Max Iheanachor",
+    "pos": "OT",
+    "school": "Arizona State",
+    "grade": 84,
+    "height": "6-6",
+    "weight": 320,
+    "bio": "Iheanachor is raw but talented. Moved from Nigeria at 13, didn't play football until JuCo. Tape full of clues he could be one of the best OL in this class.",
+    "strengths": [
+      "Raw tools suggest elite potential",
+      "Explosive with knock-back power in run",
+      "Athletic on pulls and second-level",
+      "Rapid development from JuCo"
+    ],
+    "weaknesses": [
+      "Very raw technique — late to punch",
+      "Lacks polish in pass protection",
+      "Limited football experience"
+    ]
+  },
+  {
+    "name": "Kayden McDonald",
+    "pos": "DT",
+    "school": "Ohio State",
+    "grade": 84,
+    "height": "6-3",
+    "weight": 310,
+    "bio": "McDonald has excellent size and strength. At his best against the run — presses out blocks with violent torque. Firm and stout guard to guard.",
+    "strengths": [
+      "Excellent size and strength",
+      "Presses out blocks with violent torque",
+      "Reliable and stout guard to guard",
+      "Steady, dependable presence"
+    ],
+    "weaknesses": [
+      "Not a lateral chase player",
+      "Lacks twitch as a pass rusher",
+      "Limited ceiling — more role player"
+    ]
+  },
+  {
+    "name": "Caleb Banks",
+    "pos": "DT",
+    "school": "Florida",
+    "grade": 83,
+    "height": "6-4",
+    "weight": 295,
+    "bio": "Banks measured at 6'6\", 327 lbs at the 2026 Combine with the longest wingspan among DTs since 1999. He ran a 5.04 forty. Elite size and length. Impressive 2024 tape but missed most of 2025 with broken foot. When healthy and motivated, he can be a game-wrecking interior force.",
+    "strengths": [
+      "Longest wingspan among DTs since 1999 at combine",
+      "Athletic with excellent length for the position",
+      "Twitch in hands and feet as rusher",
+      "Elite flashes when fully motivated"
+    ],
+    "weaknesses": [
+      "5.04 forty — average athleticism for DT",
+      "Injury — broken foot limited all of 2025",
+      "Frustratingly inconsistent effort"
+    ],
+    "combine": {
+      "forty": 5.04,
+      "bench": null,
+      "vert": 32,
+      "broad": 114,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Brandon Cisse",
+    "pos": "CB",
+    "school": "South Carolina",
+    "grade": 83,
+    "height": "6-1",
+    "weight": 185,
+    "bio": "Cisse is fast and twitchy with vision to close space and make plays. Loose and fluid, will likely rise through the spring.",
+    "strengths": [
+      "Elite speed and closing ability",
+      "Loose, fluid athlete",
+      "Plays with vision to read QB",
+      "Projects to improve with NFL coaching"
+    ],
+    "weaknesses": [
+      "Not physical in press",
+      "Lacks run support aggression",
+      "Focus issues lead to inconsistency"
+    ]
+  },
+  {
+    "name": "Peter Woods",
+    "pos": "DT",
+    "school": "Clemson",
+    "grade": 88,
+    "height": "6-2",
+    "weight": 300,
+    "bio": "Woods has fabulous quickness and violent hands. Holds POA with leverage and lower-body strength. Lateral range outside the tackle box. A consensus first-round interior disruptor.",
+    "strengths": [
+      "Fabulous quickness for his size",
+      "Violent hands that jolt blockers",
+      "Outstanding lateral range for DT",
+      "Holds POA with leverage"
+    ],
+    "weaknesses": [
+      "Not consistent game to game",
+      "Gets wiped on down blocks",
+      "Lack of length exposes his chest"
+    ]
+  },
+  {
+    "name": "R Mason Thomas",
+    "pos": "EDGE",
+    "school": "Oklahoma",
+    "grade": 83,
+    "height": "6-2",
+    "weight": 250,
+    "bio": "Thomas is instinctive and physical. Covers ground with first three steps, multiple ways to win. Maniacal energy despite drawing extra blockers.",
+    "strengths": [
+      "Outstanding first-step quickness",
+      "Multiple pass-rush moves",
+      "Physical and relentless at POA",
+      "Maniacal energy even when doubled"
+    ],
+    "weaknesses": [
+      "Lacks ideal height and length",
+      "Stiff when dropping into coverage",
+      "Doesn't fit the traditional prototype"
+    ]
+  },
+  {
+    "name": "Ty Simpson",
+    "pos": "QB",
+    "school": "Alabama",
+    "grade": 82,
+    "height": "6-2",
+    "weight": 210,
+    "bio": "Simpson has sound mechanics, touch and accuracy. Quick feet, compact delivery, enough arm. Good athlete on designed boots. Play tailed off late with injuries.",
+    "strengths": [
+      "Sound mechanics with compact delivery",
+      "Good touch and accuracy",
+      "Athletic on boots and rollouts",
+      "Composed game manager"
+    ],
+    "weaknesses": [
+      "Slightly undersized",
+      "Play tailed off late in 2025",
+      "Only 15 career starts",
+      "Gets sped up when pocket collapses"
+    ]
+  },
+  {
+    "name": "Christen Miller",
+    "pos": "DT",
+    "school": "Georgia",
+    "grade": 82,
+    "height": "6-3",
+    "weight": 305,
+    "bio": "Miller has ideal size with a quick first step and swipe/club moves. Makes plays on slants. Gifted athlete with development room.",
+    "strengths": [
+      "Quick first step for size",
+      "Effective swipe/club moves",
+      "Good lateral quickness",
+      "Gifted athlete in ideal frame"
+    ],
+    "weaknesses": [
+      "Gets segmented — stops feet throwing hands",
+      "Can get turned at POA",
+      "More disruptive than productive"
+    ]
+  },
+  {
+    "name": "Anthony Hill Jr.",
+    "pos": "LB",
+    "school": "Texas",
+    "grade": 82,
+    "height": "6-2",
+    "weight": 240,
+    "bio": "Hill is a fluid mover with outstanding size and speed. Instincts and speed put him in position to make plays. Outstanding closing speed from the back side.",
+    "strengths": [
+      "Elite athleticism and COD",
+      "Outstanding closing speed",
+      "Matches up with athletic TEs",
+      "Superb blitzer using speed"
+    ],
+    "weaknesses": [
+      "Isn't physical taking on blockers",
+      "Not an aggressive player",
+      "Relies too much on athleticism"
+    ]
+  },
+  {
+    "name": "Jadarian Price",
+    "pos": "RB",
+    "school": "Notre Dame",
+    "grade": 81,
+    "height": "5-10",
+    "weight": 210,
+    "bio": "Price ran a 4.49 forty with a 35\" vertical and 10'4\" broad jump at the 2026 Combine. Solid but not elite athletic profile. A compact RB with terrific vision and supreme contact balance. Dynamic kick returner with 2 TDs in 2025.",
+    "strengths": [
+      "Outstanding vision and patience",
+      "Supreme contact balance",
+      "Quick to neutralize blitzers in pass pro",
+      "Dynamic kickoff returner — 2 TDs in 2025"
+    ],
+    "weaknesses": [
+      "4.49 forty — not elite speed for RB",
+      "Fumble issues — 3 inside the 10 in 2025",
+      "Not elite receiver out of backfield"
+    ],
+    "combine": {
+      "forty": 4.49,
+      "bench": null,
+      "vert": 35,
+      "broad": 124,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Malachi Fields",
+    "pos": "WR",
+    "school": "Notre Dame",
+    "grade": 81,
+    "height": "6-4",
+    "weight": 215,
+    "bio": "Fields struggled at the 2026 Combine — his 4.61 forty confirmed limited separation speed, and he dropped passes in on-field drills. NFL.com listed him as a Day 3 stock-down. Still a big-bodied red zone weapon with 50/50 ball skills, but expectations must reset.",
+    "strengths": [
+      "Dominant 50/50 ball winner on tape",
+      "Powers through press",
+      "Excellent red zone weapon with his size",
+      "Good blocking effort for a receiver"
+    ],
+    "weaknesses": [
+      "2026 Combine — 4.61 forty (stock down); dropped passes in drills",
+      "Lacks speed to separate vs man coverage",
+      "Not a dynamic route runner underneath"
+    ],
+    "combine": {
+      "forty": 4.61,
+      "bench": null,
+      "vert": 38,
+      "broad": 124,
+      "cone": 6.98,
+      "shuttle": 4.35,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Keionte Scott",
+    "pos": "CB",
+    "school": "Miami",
+    "grade": 81,
+    "height": "5-11",
+    "weight": 190,
+    "bio": "Scott is a dynamic nickel — excellent force player, blitzer and energy provider. Generates negative plays in the run game by combining burst and block avoidance.",
+    "strengths": [
+      "Dynamic nickel with burst and ball skills",
+      "Excellent blitzer with finishing ability",
+      "Outstanding in run support",
+      "Provides explosive energy"
+    ],
+    "weaknesses": [
+      "Older prospect at 24",
+      "Fly-by missed tackles",
+      "Limited man coverage experience"
+    ]
+  },
+  {
+    "name": "Antonio Williams",
+    "pos": "WR",
+    "school": "Clemson",
+    "grade": 80,
+    "height": "5-10",
+    "weight": 185,
+    "bio": "Williams has outstanding short-area quickness, ball skills and YAC ability. Explodes off the ball, sets up defenders, creates separation. Ideal slot receiver.",
+    "strengths": [
+      "Elite short-area quickness and stop/start",
+      "Outstanding ball skills — plays above rim",
+      "Excellent YAC ability",
+      "Perfect slot receiver profile"
+    ],
+    "weaknesses": [
+      "Undersized at 5-10, 185",
+      "Limited to the slot",
+      "May struggle vs physical press"
+    ]
+  },
+  {
+    "name": "Zion Young",
+    "pos": "EDGE",
+    "school": "Missouri",
+    "grade": 80,
+    "height": "6-4",
+    "weight": 265,
+    "bio": "Young is big and powerful with heavy hands to jolt blockers. Destroys TEs assigned to block him. Firm at POA with tremendous effort. Strong Senior Bowl.",
+    "strengths": [
+      "Heavy hands that jolt blockers",
+      "Excellent length and power at POA",
+      "Destroys TEs in run game",
+      "Three-down value with strong motor"
+    ],
+    "weaknesses": [
+      "Herky-jerky mover, lacks fluidity",
+      "Not dynamic off the edge",
+      "No elite get-off or speed rush"
+    ]
+  },
+  {
+    "name": "Jake Golday",
+    "pos": "LB",
+    "school": "Cincinnati",
+    "grade": 80,
+    "height": "6-3",
+    "weight": 230,
+    "bio": "Golday is tall, lean and fast. Lined up in the box, on the edge and over the slot. Game predicated on speed to beat blockers to spots.",
+    "strengths": [
+      "Outstanding speed and burst",
+      "Versatile — box, edge, slot",
+      "Fantastic lateral range from back side",
+      "Size/length to clog throwing lanes"
+    ],
+    "weaknesses": [
+      "Lacks ideal physicality vs blockers",
+      "Struggles to escape once engaged",
+      "Lean frame may limit durability"
+    ]
+  },
+  {
+    "name": "Deion Burks",
+    "pos": "WR",
+    "school": "Oklahoma",
+    "grade": 79,
+    "height": "5-11",
+    "weight": 198,
+    "bio": "Burks had one of the best combine showings of any WR — a 4.30 forty (3rd overall at the combine), 42.5\" vertical and 10'11\" broad jump. His athletic profile is elite and cemented his Day 2 draft grade. Outstanding route-running polish and YAC ability complete the package.",
+    "strengths": [
+      "2026 Combine — 4.30 forty (3rd overall), 42.5\" vert, 10'11\" broad",
+      "Outstanding route-running polish",
+      "Varies tempo to keep defenders off balance",
+      "Effective YAC through the catch"
+    ],
+    "weaknesses": [
+      "Undersized frame limits outside potential",
+      "Concentration drops in college",
+      "Needs more overall consistency"
+    ],
+    "combine": {
+      "forty": 4.3,
+      "bench": null,
+      "vert": 42.5,
+      "broad": 131,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Zachariah Branch",
+    "pos": "WR",
+    "school": "Georgia",
+    "grade": 79,
+    "height": "5-9",
+    "weight": 180,
+    "bio": "Branch ran a 4.35 forty at the 2026 Combine with crisp route-running that NFL.com highlighted as a Day 3 stock-up. Now in top-40 pick consideration. A compact slot WR with elite speed — track champion with electric kick return ability.",
+    "strengths": [
+      "2026 Combine — 4.35 forty; NFL.com stock up to top-40",
+      "Elite speed — track champion",
+      "Electric as receiver and returner",
+      "Elite stop/start on pivot routes"
+    ],
+    "weaknesses": [
+      "Not natural hands — body catches",
+      "Compact frame limits to slot",
+      "Limited route tree beyond quick game"
+    ],
+    "combine": {
+      "forty": 4.35,
+      "bench": null,
+      "vert": 38,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Dante Moore",
+    "pos": "QB",
+    "school": "Oregon",
+    "grade": 78,
+    "height": "6-2",
+    "weight": 215,
+    "bio": "Moore has a live arm and good mobility. Showed growth after transferring to Oregon. Arm talent to make all throws but needs better processing.",
+    "strengths": [
+      "Live arm for all the throws",
+      "Good mobility and athleticism",
+      "Growth trajectory after transfer",
+      "Composed in big moments"
+    ],
+    "weaknesses": [
+      "Decision-making needs work",
+      "Processing too slow vs pressure",
+      "Inconsistent intermediate accuracy",
+      "Still developing as full-field reader"
+    ]
+  },
+  {
+    "name": "Chris Bell",
+    "pos": "WR",
+    "school": "Louisville",
+    "grade": 86,
+    "height": "6-2",
+    "weight": 220,
+    "bio": "Bell is a big, physical outside receiver with excellent hands and red zone ability. Broke out in 2025 with dominant SEC performances. Plays bigger than his measurables with outstanding body control.",
+    "strengths": [
+      "Physical outside receiver who wins at catch point",
+      "Outstanding body control on contested balls",
+      "Strong hands and reliable target",
+      "Red zone weapon with size and leaping ability"
+    ],
+    "weaknesses": [
+      "Not an elite separator underneath",
+      "Lacks top-end speed to threaten deep consistently",
+      "Route tree needs more refinement",
+      "Can be re-routed by physical press"
+    ]
+  },
+  {
+    "name": "LT Overton",
+    "pos": "DT",
+    "school": "Alabama",
+    "grade": 85,
+    "height": "6-5",
+    "weight": 278,
+    "bio": "Overton is a massive, versatile defensive lineman with rare athleticism for his size. Plays inside and outside with disruptive potential. A former five-star recruit whose tools are finally translating to production.",
+    "strengths": [
+      "Rare size/athleticism combination",
+      "Versatile — lines up inside and outside",
+      "Outstanding length to control blocks",
+      "Flashes elite pass-rush potential"
+    ],
+    "weaknesses": [
+      "Inconsistent effort and motor",
+      "Still learning to use his tools consistently",
+      "Can get washed in the run game",
+      "Production hasn't matched his talent"
+    ]
+  },
+  {
+    "name": "Emmanuel Pregnon",
+    "pos": "IOL",
+    "school": "Oregon",
+    "grade": 84,
+    "height": "6-5",
+    "weight": 318,
+    "bio": "Pregnon is a massive, physical guard who moves well for his size. Nasty temperament in the run game with strong hands to latch and drive. Anchored Oregon's dominant offensive line.",
+    "strengths": [
+      "Massive frame with excellent movement skills",
+      "Physical, nasty run blocker",
+      "Strong anchor in pass protection",
+      "Experienced starter with leadership"
+    ],
+    "weaknesses": [
+      "Can get beat by quick interior rushers",
+      "Occasionally overextends in pass pro",
+      "Limited tackle versatility",
+      "Needs to improve hand placement"
+    ]
+  },
+  {
+    "name": "D'Angelo Ponds",
+    "pos": "CB",
+    "school": "Indiana",
+    "grade": 84,
+    "height": "5-9",
+    "weight": 170,
+    "bio": "Ponds is a feisty, competitive corner with outstanding ball skills despite his smaller frame. Quick feet and fluid hips allow him to mirror receivers. Was a key piece in Indiana's breakout 2025 season.",
+    "strengths": [
+      "Elite ball skills and instincts",
+      "Quick feet with fluid change of direction",
+      "Competitive and physical despite size",
+      "Outstanding in zone coverage"
+    ],
+    "weaknesses": [
+      "Undersized at 5-9, 170",
+      "Will struggle vs bigger outside WRs",
+      "Lacks ideal length for press",
+      "Run support can be an issue"
+    ]
+  },
+  {
+    "name": "Kamari Ramsey",
+    "pos": "S",
+    "school": "USC",
+    "grade": 83,
+    "height": "6-0",
+    "weight": 205,
+    "bio": "Ramsey is a versatile, hard-hitting safety with range and instincts. Physical striker against the run who also covers ground in the deep half. Emerged as one of the top safeties in the class.",
+    "strengths": [
+      "Versatile — plays deep, box, and slot",
+      "Physical striker with big hits",
+      "Good range and closing speed",
+      "Outstanding football intelligence"
+    ],
+    "weaknesses": [
+      "Can be late reacting to play-action",
+      "Occasional missed tackles in space",
+      "Needs to improve ball production",
+      "Gets caught peeking in the backfield"
+    ]
+  },
+  {
+    "name": "Gabe Jacas",
+    "pos": "EDGE",
+    "school": "Illinois",
+    "grade": 83,
+    "height": "6-4",
+    "weight": 255,
+    "bio": "Jacas is a long, athletic edge rusher who pairs length with closing speed. Active hands and a developing rush plan make him a rising prospect. Had a breakout 2025 campaign in the Big Ten.",
+    "strengths": [
+      "Outstanding length and athleticism",
+      "Active hands to defeat blocks",
+      "Closing speed on the quarterback",
+      "Versatile — drops into coverage"
+    ],
+    "weaknesses": [
+      "Still developing pass-rush plan",
+      "Can get washed at POA vs power",
+      "Inconsistent leverage and pad level",
+      "Limited power-rush repertoire"
+    ]
+  },
+  {
+    "name": "Gennings Dunker",
+    "pos": "OT",
+    "school": "Iowa",
+    "grade": 82,
+    "height": "6-5",
+    "weight": 315,
+    "bio": "Dunker is a mauling, physical tackle who dominates in the run game. Iowa product with outstanding technique and strength. Projects as a starting right tackle with guard versatility.",
+    "strengths": [
+      "Outstanding run blocker — finishes blocks",
+      "Strong hands and excellent grip strength",
+      "Sound technique and footwork",
+      "Physical, nasty temperament"
+    ],
+    "weaknesses": [
+      "Lacks elite foot speed for LT",
+      "Can struggle vs speed rushers",
+      "Limited lateral mobility",
+      "Pass protection ceiling is average"
+    ]
+  },
+  {
+    "name": "Isaiah World",
+    "pos": "OT",
+    "school": "Oregon",
+    "grade": 82,
+    "height": "6-6",
+    "weight": 310,
+    "bio": "World has ideal size and length for the NFL with outstanding athleticism. Moves well on combo blocks and can climb to the second level. Raw but tools are enticing.",
+    "strengths": [
+      "Ideal size and length for NFL tackle",
+      "Athletic on combo blocks",
+      "Can climb and wall off linebackers",
+      "High upside with development"
+    ],
+    "weaknesses": [
+      "Raw technique — needs coaching",
+      "Inconsistent anchor in pass pro",
+      "Gets caught lunging at times",
+      "Needs to add functional strength"
+    ]
+  },
+  {
+    "name": "Germie Bernard",
+    "pos": "WR",
+    "school": "Alabama",
+    "grade": 81,
+    "height": "6-1",
+    "weight": 204,
+    "bio": "Bernard is a dynamic, versatile receiver who can line up anywhere. Explosive after the catch with excellent speed. Emerged as Alabama's go-to target in 2025 with reliable production.",
+    "strengths": [
+      "Dynamic run-after-catch ability",
+      "Excellent speed and acceleration",
+      "Versatile — inside and outside",
+      "Reliable hands in traffic"
+    ],
+    "weaknesses": [
+      "Not an elite contested-catch winner",
+      "Undersized for outside role",
+      "Route tree still developing",
+      "Can disappear in big moments"
+    ]
+  },
+  {
+    "name": "Chris Brazzell II",
+    "pos": "WR",
+    "school": "Tennessee",
+    "grade": 80,
+    "height": "6-5",
+    "weight": 200,
+    "bio": "Brazzell is a massive outside receiver in the Mike Evans mold. Uses his size and length to dominate at the catch point. Red zone nightmare for defenders with his ability to high-point the football.",
+    "strengths": [
+      "Massive frame at 6-5 — huge catch radius",
+      "Dominates at the catch point",
+      "Outstanding red zone target",
+      "Tracks and high-points deep balls"
+    ],
+    "weaknesses": [
+      "Not a quick separator underneath",
+      "Lacks elite speed for his size",
+      "Inconsistent route runner",
+      "Can be jammed off the line"
+    ]
+  },
+  {
+    "name": "Elijah Sarratt",
+    "pos": "WR",
+    "school": "Indiana",
+    "grade": 80,
+    "height": "6-2",
+    "weight": 209,
+    "bio": "Sarratt is a reliable, well-rounded receiver who stretches the field and works the red zone. Clutch performer who showed up in big games during Indiana's breakout 2025 season.",
+    "strengths": [
+      "Reliable and clutch in big moments",
+      "Good size to win contested catches",
+      "Stretches the field vertically",
+      "Physical after the catch"
+    ],
+    "weaknesses": [
+      "Doesn't create much separation",
+      "Average route-running technique",
+      "Not dynamic with ball in hands",
+      "Limited YAC ability"
+    ]
+  },
+  {
+    "name": "Max Klare",
+    "pos": "TE",
+    "school": "Ohio State",
+    "grade": 79,
+    "height": "6-5",
+    "weight": 243,
+    "bio": "Klare is a long, athletic tight end with vertical speed. Can stretch the seam and create mismatches. Emerged as a key target in Ohio State's offense. Excellent blocker for his build.",
+    "strengths": [
+      "Outstanding vertical speed for TE",
+      "Creates mismatches down the seam",
+      "Good blocker willing to engage",
+      "Long frame with catch radius"
+    ],
+    "weaknesses": [
+      "Thin frame — needs to add mass",
+      "Not a YAC threat",
+      "Inconsistent hands under pressure",
+      "Limited route tree beyond verticals"
+    ]
+  },
+  {
+    "name": "Harold Perkins Jr.",
+    "pos": "LB",
+    "school": "LSU",
+    "grade": 79,
+    "height": "6-1",
+    "weight": 225,
+    "bio": "Perkins is an explosive, twitchy linebacker with pass-rush ability. Injuries limited his college career, but the talent is undeniable. Offers scheme versatility as a blitzer and edge setter.",
+    "strengths": [
+      "Explosive first step as a blitzer",
+      "Outstanding twitch and athleticism",
+      "Versatile — edge, off-ball, coverage",
+      "Elite closing speed"
+    ],
+    "weaknesses": [
+      "Extensive injury history",
+      "Hasn't stayed healthy for full season",
+      "Undersized at POA",
+      "Still learning to read and react"
+    ]
+  },
+  {
+    "name": "Keith Abney II",
+    "pos": "CB",
+    "school": "Arizona State",
+    "grade": 80,
+    "height": "6-0",
+    "weight": 190,
+    "bio": "Abney is a versatile cover corner with outstanding zone awareness. Physical and willing in run support. His combination of coverage ability and toughness makes him a day-two target.",
+    "strengths": [
+      "Versatile — plays zone and man",
+      "Physical and willing tackler",
+      "Outstanding zone awareness and instincts",
+      "Good ball skills on throws his way"
+    ],
+    "weaknesses": [
+      "Lacks elite speed and recovery",
+      "Can be beat by double moves",
+      "Not a true shutdown corner",
+      "Tightness shows in transition"
+    ]
+  },
+  {
+    "name": "Garrett Nussmeier",
+    "pos": "QB",
+    "school": "LSU",
+    "grade": 78,
+    "height": "6-2",
+    "weight": 210,
+    "bio": "Nussmeier has a quick release and good arm talent. Competitive and tough in the pocket. Flashed elite potential but struggled with consistency and turnovers during his LSU career.",
+    "strengths": [
+      "Quick release with good velocity",
+      "Competitive and tough in the pocket",
+      "Can make off-platform throws",
+      "Flashes elite processing"
+    ],
+    "weaknesses": [
+      "Turnover-prone — poor decisions",
+      "Inconsistent accuracy",
+      "Struggles under pressure",
+      "Pocket presence needs work"
+    ]
+  },
+  {
+    "name": "Carson Beck",
+    "pos": "QB",
+    "school": "Miami",
+    "grade": 77,
+    "height": "6-4",
+    "weight": 220,
+    "bio": "Beck transferred from Georgia to Miami after mixed results. Has ideal size and arm talent for the NFL. Needs to prove he can be consistent and stay healthy after a turbulent college career.",
+    "strengths": [
+      "Ideal NFL size and arm strength",
+      "Experience in big-game moments",
+      "Can make all the throws",
+      "Good touch on intermediate routes"
+    ],
+    "weaknesses": [
+      "Turnover issues throughout career",
+      "Durability concerns",
+      "Decision-making under pressure",
+      "Needs to prove he can lead consistently"
+    ]
+  },
+  {
+    "name": "Mike Washington Jr.",
+    "pos": "RB",
+    "school": "Arkansas",
+    "grade": 77,
+    "height": "6-2",
+    "weight": 223,
+    "bio": "Washington ran the fastest 40 among all running backs at the 2026 Combine — a 4.33 at 223 pounds. He also added a 39\" vertical and 10'8\" broad jump. Stock up significantly to Day 2 consideration. A big, powerful back with 1,070 yards and 8 TDs in 2025 at Arkansas.",
+    "strengths": [
+      "2026 Combine — 4.33 forty (fastest RB) at 223 lbs",
+      "39\" vertical and 10'8\" broad jump — elite athleticism",
+      "Outstanding vision and patience at LOS",
+      "Effective stiff arm to shed tacklers"
+    ],
+    "weaknesses": [
+      "Runs upright — limited leverage at contact",
+      "Pass protection needs significant work",
+      "Limited receiving usage in college"
+    ],
+    "combine": {
+      "forty": 4.33,
+      "bench": null,
+      "vert": 39,
+      "broad": 128,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Romello Height",
+    "pos": "EDGE",
+    "school": "Texas Tech",
+    "grade": 79,
+    "height": "6-3",
+    "weight": 240,
+    "bio": "Height is an explosive, high-motor edge rusher with dynamic pass-rush ability. Pairs well with teammate David Bailey in Texas Tech's front. Can be a situational impact player on day one.",
+    "strengths": [
+      "Explosive first step and closing speed",
+      "High motor with relentless effort",
+      "Dynamic situational pass rusher",
+      "Good bend and flexibility"
+    ],
+    "weaknesses": [
+      "Undersized for every-down role",
+      "Needs to add significant mass",
+      "Struggles holding POA vs run",
+      "One-dimensional speed rusher currently"
+    ]
+  },
+  {
+    "name": "A.J. Haulcy",
+    "pos": "S",
+    "school": "LSU",
+    "grade": 78,
+    "height": "6-0",
+    "weight": 222,
+    "bio": "Haulcy is a physical, hard-hitting safety with outstanding striking ability. Fills the alley aggressively and makes plays on the ball. A tone-setter in LSU's secondary.",
+    "strengths": [
+      "Physical striker — delivers big hits",
+      "Outstanding in run support",
+      "Good ball skills and awareness",
+      "Aggressive downhill player"
+    ],
+    "weaknesses": [
+      "Limited range in deep coverage",
+      "Can be a liability in man coverage",
+      "Takes poor angles in space",
+      "Overly aggressive — freelances too much"
+    ]
+  },
+  {
+    "name": "Eli Stowers",
+    "pos": "TE",
+    "school": "Vanderbilt",
+    "grade": 78,
+    "height": "6-4",
+    "weight": 235,
+    "bio": "Stowers set the all-time NFL Combine records for tight ends in both the vertical jump (45.5\") and broad jump (11'3\"), making him the most explosive TE ever tested. Added a 4.51 forty. His combine performance is historic and shot him up draft boards. Field-stretching seam threat with natural hands.",
+    "strengths": [
+      "2026 Combine — ALL-TIME TE records: 45.5\" vert and 11'3\" broad jump",
+      "Explosive seam threat who creates mismatches",
+      "Natural hands and body control",
+      "Rare athletic ceiling for the position"
+    ],
+    "weaknesses": [
+      "Thin frame — needs to bulk up",
+      "Blocking is a major weakness",
+      "Vanderbilt competition level — needs to prove vs elite DEs",
+      "Limited in-line TE experience"
+    ],
+    "combine": {
+      "forty": 4.51,
+      "bench": null,
+      "vert": 45.5,
+      "broad": 135,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Jonah Coleman",
+    "pos": "RB",
+    "school": "Washington",
+    "grade": 76,
+    "height": "5-10",
+    "weight": 215,
+    "bio": "Coleman is a compact, powerful runner who transferred to Washington and immediately produced. Runs with violence and pad level. Three-down potential with toughness in pass protection.",
+    "strengths": [
+      "Runs with power and low pad level",
+      "Excellent contact balance",
+      "Tough and willing pass protector",
+      "Productive — consistent yardage"
+    ],
+    "weaknesses": [
+      "Lacks elite breakaway speed",
+      "Not a dynamic receiver",
+      "Limited big-play ability",
+      "Older prospect with mileage"
+    ]
+  },
+  {
+    "name": "Nicholas Singleton",
+    "pos": "RB",
+    "school": "Penn State",
+    "grade": 76,
+    "height": "6-0",
+    "weight": 225,
+    "bio": "Singleton is a big, physical back with outstanding speed for his size. Former five-star recruit who showed flashes of dominance. One-cut downhill runner with home-run potential.",
+    "strengths": [
+      "Outstanding speed for his size",
+      "One-cut, downhill running style",
+      "Home-run threat on any carry",
+      "Physical and hard to bring down"
+    ],
+    "weaknesses": [
+      "Inconsistent vision and patience",
+      "Didn't always produce to his talent level",
+      "Limited receiving skills",
+      "Fumble issues in college"
+    ]
+  },
+  {
+    "name": "Derrick Moore",
+    "pos": "EDGE",
+    "school": "Michigan",
+    "grade": 78,
+    "height": "6-5",
+    "weight": 260,
+    "bio": "Moore is a long, powerful edge defender with NFL size. Physical run defender who can also generate pressure. Michigan product with outstanding technique and discipline.",
+    "strengths": [
+      "Excellent size and length",
+      "Physical and stout vs the run",
+      "Good hand usage and technique",
+      "Disciplined edge setter"
+    ],
+    "weaknesses": [
+      "Lacks elite burst off the edge",
+      "Stiff in space and coverage",
+      "Limited pass-rush ceiling",
+      "Not a dynamic athlete"
+    ]
+  },
+  {
+    "name": "Josiah Trotter",
+    "pos": "LB",
+    "school": "Missouri",
+    "grade": 77,
+    "height": "6-2",
+    "weight": 237,
+    "bio": "Trotter is a physical, downhill linebacker with outstanding run-defense instincts. Son of NFL veteran Jeremiah Trotter. Tackles with authority and fills gaps aggressively.",
+    "strengths": [
+      "Physical tackler with authority",
+      "Outstanding run-defense instincts",
+      "NFL bloodlines and character",
+      "Fills gaps aggressively"
+    ],
+    "weaknesses": [
+      "Limited in coverage — stiff hips",
+      "Not a sideline-to-sideline athlete",
+      "Struggles vs athletic TEs",
+      "Needs to improve pass drops"
+    ]
+  },
+  {
+    "name": "Caleb Tiernan",
+    "pos": "OT",
+    "school": "Northwestern",
+    "grade": 77,
+    "height": "6-7",
+    "weight": 325,
+    "bio": "Tiernan has massive size and length. Athletic for his frame with the ability to play right tackle or kick inside to guard. Showed improvement throughout 2025.",
+    "strengths": [
+      "Massive frame with outstanding length",
+      "Versatile — tackle and guard",
+      "Athletic for 6-7, 325",
+      "Improved steadily through college"
+    ],
+    "weaknesses": [
+      "Needs to improve anchor",
+      "Can be beaten by inside moves",
+      "Occasionally oversets in pass pro",
+      "Needs more consistency"
+    ]
+  }
+]

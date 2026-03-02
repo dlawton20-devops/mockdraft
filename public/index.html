@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 NFL Draft Simulator</title>
+<meta name="description" content="Free AI-powered 2026 NFL Draft Simulator with combine data, trades, predictions and grading. Run your own mock draft.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-pattern"></div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo" onclick="goHome()">
+      <div class="logo-shield">NFL</div>
+      <div class="logo-text">Draft Simulator <span>2026</span></div>
+    </div>
+    <nav class="header-nav">
+      <button class="nav-link" onclick="goHome()">Home</button>
+      <button class="nav-link" onclick="showNewsScreen()">News</button>
+      <button class="nav-link" onclick="showLegalPage('about')">About</button>
+      <button class="nav-link" onclick="showLegalPage('dataSources')">Data Sources</button>
+    </nav>
+    <div class="header-right">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode" aria-label="Toggle theme">
+        <span class="theme-icon-dark">☀️</span>
+        <span class="theme-icon-light">🌙</span>
+      </button>
+      <span class="premium-badge" id="premiumBadge" style="display:none">PRO</span>
+      <div class="pick-counter" id="pickCounter">Round 1</div>
+      <div id="authButtons">
+        <button class="header-btn" onclick="showAuthModal('login')">Log In</button>
+        <button class="header-btn primary" onclick="showAuthModal('signup')">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HOME SCREEN -->
+<div class="screen active" id="homeScreen">
+  <div class="home-screen">
+    <div class="hero">
+      <div class="hero-badge">2026 NFL DRAFT</div>
+      <h1>Draft Simulator</h1>
+      <p class="hero-sub">Pittsburgh, PA &bull; April 23-25, 2026 &bull; Post-Combine Edition</p>
+      <label class="expert-mode-toggle">
+        <input type="checkbox" id="expertModeCheck" onchange="toggleExpertMode()">
+        <span class="toggle-label">Expert mode</span>
+        <span class="toggle-hint">Reorders the draft board using Kiper, Jeremiah &amp; Brooks consensus rankings. AI teams also respect expert consensus picks.</span>
+      </label>
+    </div>
+    <div class="mode-cards">
+      <div class="mode-card" onclick="showTeamSelect()">
+        <div class="mode-icon">&#127944;</div>
+        <h2>Draft for Your Team</h2>
+        <p>Select a team and control every pick across 7 rounds. Trade picks, use combine data, build your roster.</p>
+        <div class="mode-btn">Select Your Team &rarr;</div>
+      </div>
+      <div class="mode-card" onclick="startFullAuto()">
+        <div class="mode-icon">&#9889;</div>
+        <h2>Full Mock Draft</h2>
+        <p>Watch the AI simulate all 224 picks with realistic team needs, combine influence, and BPA logic.</p>
+        <div class="mode-btn">Auto Simulate &rarr;</div>
+      </div>
+      <div class="mode-card predict" onclick="startPredictMode()">
+        <div class="mode-icon">&#128302;</div>
+        <h2>Predict the Draft</h2>
+        <p>AI prediction based on team needs, historical tendencies, combine measurables, and draft patterns.</p>
+        <div class="mode-btn predict-btn">Generate Predictions &rarr;</div>
+      </div>
+    </div>
+    <div class="home-features">
+      <div class="hf-item"><span>📊</span> Combine Measurements</div>
+      <div class="hf-item"><span>🔄</span> Trade Picks</div>
+      <div class="hf-item"><span>📝</span> Pick Grading</div>
+      <div class="hf-item"><span>⚠️</span> Character Red Flags</div>
+      <div class="hf-item"><span>💡</span> AI Pick Reasoning</div>
+      <div class="hf-item"><span>📰</span> Team News</div>
+    </div>
+  </div>
+</div>
+
+<!-- TEAM SELECT SCREEN -->
+<div class="screen" id="teamSelectScreen">
+  <div class="team-select-screen">
+    <h1>Select Your Team</h1>
+    <p class="subtitle">You'll make all picks for your team across 7 rounds</p>
+    <div class="team-grid" id="teamGrid"></div>
+  </div>
+</div>
+
+<!-- DRAFT SCREEN -->
+<div class="screen" id="draftScreen">
+  <div class="draft-screen">
+    <div class="on-the-clock" id="onTheClock">
+      <div class="otc-left">
+        <div class="clock-label">On The Clock</div>
+        <div class="clock-team-row">
+          <div class="clock-team-logo" id="clockLogo"></div>
+          <div>
+            <div class="clock-team-name" id="clockTeamName"></div>
+            <div class="clock-pick-num" id="clockPickNum"></div>
+          </div>
+        </div>
+      </div>
+      <div class="otc-right">
+        <div class="clock-needs" id="clockNeeds"></div>
+      </div>
+    </div>
+    <div class="sim-controls" id="simControls">
+      <button class="sim-btn primary" id="btnNextPick" onclick="simNextPick()">Next Pick</button>
+      <button class="sim-btn" id="btnSimToMe" onclick="simToMyPick()">Sim to My Pick</button>
+      <button class="sim-btn gold" id="btnAutoPick" onclick="autoPickForMe()">Auto Pick for Me</button>
+      <button class="sim-btn trade" id="btnTrade" onclick="showTradeModal()" style="display:none">Trade Pick</button>
+      <button class="sim-btn" id="btnSimAll" onclick="simRestOfDraft()">Sim Remaining</button>
+      <div class="speed-control">
+        <label>Speed:</label>
+        <select id="speedSelect">
+          <option value="1500">Slow</option>
+          <option value="800" selected>Normal</option>
+          <option value="300">Fast</option>
+          <option value="30">Instant</option>
+        </select>
+      </div>
+    </div>
+    <div class="draft-layout">
+      <div class="draft-board-panel">
+        <div class="round-tabs" id="roundTabs"></div>
+        <div class="draft-picks-list" id="draftPicksList"></div>
+      </div>
+      <div class="center-panel">
+        <div id="pickDisplay" class="pick-display">
+          <div id="pickAnnouncement" class="pick-announcement"></div>
+        </div>
+        <div id="userPickArea" class="user-pick-area">
+          <div class="pick-area-header"><h3>Make Your Selection</h3></div>
+          <div class="prospect-search">
+            <span class="search-icon">&#128269;</span>
+            <input type="text" id="searchInput" placeholder="Search prospects..." oninput="renderProspectList()">
+          </div>
+          <div class="position-filters" id="positionFilters"></div>
+          <div class="available-prospects" id="availableProspects"></div>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="panel-card" id="myGradePanel" style="display:none">
+          <h3>Your Draft Grade</h3>
+          <div class="my-grade-display" id="myGradeDisplay"></div>
+        </div>
+        <div class="panel-card">
+          <h3>Best Players Available</h3>
+          <div class="bpa-list" id="bpaList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PLAYER MODAL -->
+<div class="modal-overlay" id="playerModal" onclick="closeModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closePlayerModal()">&times;</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<!-- TRADE MODAL -->
+<div class="modal-overlay" id="tradeModal" onclick="closeTradeModal()">
+  <div class="modal-content trade-modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeTradeModal()">&times;</button>
+    <div id="tradeModalBody"></div>
+  </div>
+</div>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="authModal" onclick="closeAuthModal()">
+  <div class="modal-content auth-modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeAuthModal()">&times;</button>
+    <div id="authModalBody"></div>
+  </div>
+</div>
+
+<!-- RESULTS SCREEN -->
+<div class="screen" id="resultsScreen">
+  <div class="results-screen">
+    <div class="results-header">
+      <h1>Draft Complete</h1>
+      <p class="results-subtitle" id="resultsSubtitle">2026 NFL Draft — Full Results</p>
+    </div>
+    <div class="results-grade-hero" id="resultsGradeHero"></div>
+    <div class="results-actions">
+      <button class="sim-btn primary" onclick="saveDraft()">Save Draft</button>
+      <button class="sim-btn" onclick="goHome()">New Draft</button>
+    </div>
+    <div class="results-round-tabs" id="resultsRoundTabs"></div>
+    <div class="results-compare-section" id="resultsCompareSection" style="display:none">
+      <h3>Compare to Expert Consensus (Round 1)</h3>
+      <p class="compare-desc">How our picks compare to the consensus big board from Mel Kiper, Daniel Jeremiah, Bucky Brooks, Eric Froton & Vinnie Iyer.</p>
+      <div class="compare-grid" id="resultsCompareGrid"></div>
+    </div>
+    <div class="results-grid" id="resultsGrid"></div>
+    <button class="restart-btn" onclick="goHome()">Simulate Again</button>
+  </div>
+</div>
+
+<!-- ACCOUNT SCREEN -->
+<div class="screen" id="accountScreen">
+  <div class="account-screen">
+    <button class="back-link" onclick="goHome()">&larr; Back to Home</button>
+    <div id="accountContent"></div>
+  </div>
+</div>
+
+<!-- NEWS SCREEN -->
+<div class="screen" id="newsScreen">
+  <div class="news-screen">
+    <button class="back-link" onclick="goHome()">&larr; Back to Home</button>
+    <h1>Draft News & Intel</h1>
+    <p class="subtitle">Team-specific news, tweets, and draft coverage</p>
+    <div class="news-team-picker" id="newsTeamPicker"></div>
+    <div class="news-feed" id="newsFeed"></div>
+  </div>
+</div>
+
+<!-- LEGAL SCREEN -->
+<div class="screen" id="legalScreen">
+  <div class="legal-screen">
+    <button class="back-link" onclick="goHome()">&larr; Back to Home</button>
+    <div id="legalContent"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="#" onclick="showLegalPage('about');return false">About</a>
+      <a href="#" onclick="showLegalPage('dataSources');return false">Data Sources</a>
+      <a href="#" onclick="showLegalPage('terms');return false">Terms of Service</a>
+      <a href="#" onclick="showLegalPage('privacy');return false">Privacy Policy</a>
+      <a href="#" onclick="showLegalPage('disclaimer');return false">Disclaimer</a>
+    </div>
+    <p class="footer-disclaimer">This is an independent fan-made draft simulator for entertainment purposes only. It is not affiliated with, endorsed by, or connected to the National Football League (NFL) or any NFL team. Team names and player names are used for informational purposes. Player data sourced from public combine results and scouting reports. &copy; 2026 Draft Simulator.</p>
+  </div>
+</footer>
+
+<div class="confetti-container" id="confettiContainer"></div>
+
+<!-- COOKIE CONSENT BANNER -->
+<div class="cookie-banner" id="cookieBanner" style="display:none">
+  <div class="cookie-inner">
+    <div class="cookie-text">
+      <strong>We use cookies</strong> to save your draft history, remember your preferences, and improve your experience. By continuing to use this site, you agree to our
+      <a href="#" onclick="showLegalPage('privacy');closeCookieBanner();return false">Privacy Policy</a>.
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-btn accept" onclick="acceptCookies()">Accept All</button>
+      <button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
+    </div>
+  </div>
+</div>
+
+<!-- Supabase JS Client (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<!-- Twitter Widget (for news embeds) -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script src="app.js"></script>
+<script src="auth.js"></script>
+<script src="news.js"></script>
+</body>
+</html>
