@@ -72,6 +72,30 @@ body {
     radial-gradient(ellipse at 80% 60%, rgba(213, 10, 10, 0.04) 0%, transparent 60%);
 }
 
+/* ===== AD BANNER ===== */
+.ad-bar {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  padding: 6px 0;
+  min-height: 66px;
+}
+.ad-bar-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ad-leaderboard {
+  width: 728px;
+  height: 90px;
+}
+@media (max-width: 768px) {
+  .ad-leaderboard { width: 320px; height: 50px; }
+  .ad-bar { min-height: 62px; }
+}
+
 /* ===== HEADER ===== */
 header {
   position: sticky;
