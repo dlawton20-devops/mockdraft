@@ -1560,6 +1560,20 @@ function showLegalPage(page) {
   showScreen('legalScreen');
 }
 
+// ===== SHARE DRAFT =====
+function shareDraft(){
+  const subtitle = document.getElementById('resultsSubtitle')?.textContent || '2026 NFL Mock Draft';
+  const grade = document.getElementById('resultsGradeHero')?.querySelector('.grade-letter')?.textContent || '';
+  const gradeText = grade ? ` — Grade: ${grade}` : '';
+  const text = `I just ran a 2026 NFL Mock Draft${gradeText}! Check out the full results:\n\n🏈 ${subtitle}\n\nhttps://mockdraft.onrender.com\n\n#NFLDraft #MockDraft #NFL2026`;
+  if(navigator.share){
+    navigator.share({ title:'2026 NFL Mock Draft', text, url:'https://mockdraft.onrender.com' }).catch(()=>{});
+  } else {
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
+    window.open(twitterUrl, '_blank', 'width=560,height=400');
+  }
+}
+
 // ===== THEME TOGGLE =====
 function applyTheme(theme){
   document.documentElement.setAttribute('data-theme', theme);
@@ -1606,4 +1620,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   generateProspects();
   const cb=document.getElementById('expertModeCheck');if(cb)cb.checked=!!window.expertMode;
   initCookieBanner();
+  // Init AdSense units
+  try{ (window.adsbygoogle=window.adsbygoogle||[]).push({}); }catch(e){}
 });

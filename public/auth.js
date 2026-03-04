@@ -199,8 +199,16 @@ async function renderAccountPage() {
       </div>
     </div>
     ${!sub ? `<div class="upgrade-banner">
-      <div class="ub-text"><strong>Upgrade to Premium — $10/month</strong><br>Save unlimited drafts, team news feeds, ad-free experience</div>
-      <button class="auth-submit-btn" onclick="startCheckout()" style="margin:0;width:auto;padding:10px 24px">Subscribe</button>
+      <div class="ub-text">
+        <strong>Go Premium — $4.99/month</strong>
+        <div class="ub-perks">
+          <span>✓ Save unlimited mock drafts</span>
+          <span>✓ Ad-free experience</span>
+          <span>✓ Team news feeds</span>
+          <span>✓ Draft history & stats</span>
+        </div>
+      </div>
+      <button class="upgrade-cta-btn" onclick="startCheckout()">Upgrade Now &rarr;</button>
     </div>` : ''}
     <div class="account-section">
       <h3>Favourite Team</h3>
@@ -244,7 +252,7 @@ async function renderAccountPage() {
 
 async function saveDraft() {
   if (!currentUser) { showAuthModal('signup'); return; }
-  if (!isPremium()) { showToast('Premium required to save drafts. Upgrade for $10/mo!'); return; }
+  if (!isPremium()) { showToast('Premium required to save drafts. Upgrade for $4.99/mo!'); return; }
   if (!draftResults || !draftResults.filter(Boolean).length) { showToast('No draft to save'); return; }
   const teamAbbr = userTeamIdx >= 0 ? TEAMS[userTeamIdx].abbr : null;
   const grade = userTeamIdx >= 0 ? getTeamDraftGrade(userTeamIdx) : null;

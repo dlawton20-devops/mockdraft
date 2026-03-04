@@ -72,7 +72,7 @@ body {
     radial-gradient(ellipse at 80% 60%, rgba(213, 10, 10, 0.04) 0%, transparent 60%);
 }
 
-/* ===== AD BANNER ===== */
+/* ===== ADS ===== */
 .ad-bar {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
@@ -94,6 +94,11 @@ body {
 @media (max-width: 768px) {
   .ad-leaderboard { width: 320px; height: 50px; }
   .ad-bar { min-height: 62px; }
+}
+.ad-results-slot {
+  max-width: 900px;
+  margin: 24px auto;
+  text-align: center;
 }
 
 /* ===== HEADER ===== */
@@ -940,11 +945,22 @@ header {
 .account-badge.free { background: rgba(255,255,255,0.06); color: var(--text-muted); }
 .upgrade-banner {
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
-  background: linear-gradient(135deg, rgba(201,176,55,0.08), rgba(201,176,55,0.03));
-  border: 1px solid rgba(201,176,55,0.2); border-radius: 12px;
-  padding: 16px 20px; margin: 16px 0;
+  background: linear-gradient(135deg, rgba(201,176,55,0.12), rgba(201,176,55,0.04));
+  border: 1px solid rgba(201,176,55,0.3); border-radius: 12px;
+  padding: 20px 24px; margin: 16px 0;
 }
-.ub-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.ub-text { font-size: 14px; color: var(--text-primary); line-height: 1.5; }
+.ub-text strong { font-size: 16px; color: var(--accent-gold); display: block; margin-bottom: 8px; }
+.ub-perks { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 6px; }
+.ub-perks span { font-size: 12px; color: var(--text-secondary); }
+.upgrade-cta-btn {
+  background: linear-gradient(135deg, var(--accent-gold), #e2c94a);
+  color: #1a1a1a; border: none; border-radius: 8px;
+  padding: 12px 24px; font-size: 14px; font-weight: 800;
+  cursor: pointer; white-space: nowrap; flex-shrink: 0;
+  transition: all 0.15s; letter-spacing: 0.3px;
+}
+.upgrade-cta-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(201,176,55,0.4); }
 .account-section {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -1100,8 +1116,13 @@ header {
 
 /* ===== RESULTS ACTIONS ===== */
 .results-actions {
-  display: flex; gap: 10px; justify-content: center; margin: 16px 0;
+  display: flex; gap: 10px; justify-content: center; margin: 16px 0; flex-wrap: wrap;
 }
+.share-btn {
+  background: linear-gradient(135deg, #1da1f2, #0d8ecf);
+  border-color: transparent; color: white; font-weight: 700;
+}
+.share-btn:hover { box-shadow: 0 4px 12px rgba(29,161,242,0.4); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {

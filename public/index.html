@@ -3,8 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2026 NFL Draft Simulator</title>
-<meta name="description" content="Free AI-powered 2026 NFL Draft Simulator with combine data, trades, predictions and grading. Run your own mock draft.">
+<title>2026 NFL Draft Simulator | Free Mock Draft Tool</title>
+<meta name="description" content="Free AI-powered 2026 NFL Draft Simulator with official combine data, trades, pick grading and predictions. Run your own 7-round mock draft for all 32 NFL teams. Pittsburgh, PA — April 23–25, 2026.">
+<meta name="keywords" content="2026 NFL Draft simulator, mock draft 2026, NFL draft picks, NFL combine 2026, mock draft tool, NFL draft predictions">
+<meta property="og:title" content="2026 NFL Draft Simulator — Free Mock Draft Tool">
+<meta property="og:description" content="Run a 7-round AI mock draft with real combine data, trades and grading. Free to play — Pittsburgh, April 2026.">
+<meta property="og:url" content="https://mockdraft.onrender.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://mockdraft.onrender.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 NFL Draft Simulator">
+<meta name="twitter:description" content="Free AI mock draft tool — combine data, trades, pick grading. All 32 teams, 7 rounds.">
+<link rel="canonical" href="https://mockdraft.onrender.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -203,6 +213,7 @@
     <div class="results-grade-hero" id="resultsGradeHero"></div>
     <div class="results-actions">
       <button class="sim-btn primary" onclick="saveDraft()">Save Draft</button>
+      <button class="sim-btn share-btn" onclick="shareDraft()">&#x1F4E4; Share</button>
       <button class="sim-btn" onclick="goHome()">New Draft</button>
     </div>
     <div class="results-round-tabs" id="resultsRoundTabs"></div>
@@ -210,6 +221,15 @@
       <h3>Compare to Expert Consensus (Round 1)</h3>
       <p class="compare-desc">How our picks compare to the consensus big board from Mel Kiper, Daniel Jeremiah, Bucky Brooks, Eric Froton & Vinnie Iyer.</p>
       <div class="compare-grid" id="resultsCompareGrid"></div>
+    </div>
+    <!-- Ad slot between results sections -->
+    <div class="ad-results-slot">
+      <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+        data-ad-slot="XXXXXXXXXX"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
     </div>
     <div class="results-grid" id="resultsGrid"></div>
     <button class="restart-btn" onclick="goHome()">Simulate Again</button>
