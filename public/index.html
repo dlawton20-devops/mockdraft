@@ -27,7 +27,12 @@
       <div class="logo-shield">NFL</div>
       <div class="logo-text">Draft Simulator <span>2026</span></div>
     </div>
-    <nav class="header-nav">
+    <button class="hamburger-btn" id="hamburgerBtn" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    <nav class="header-nav" id="headerNav">
       <button class="nav-link" onclick="goHome()">Home</button>
       <button class="nav-link" onclick="showNewsScreen()">News</button>
       <button class="nav-link" onclick="showLegalPage('about')">About</button>

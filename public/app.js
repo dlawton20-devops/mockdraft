@@ -1320,10 +1320,15 @@ function openPlayerModal(prospect){
     const statusLabel=isProjected?'<span class="combine-status projected">Projected</span>':'<span class="combine-status official">Official</span>';
     combineHTML=`<div class="pm-section-title" style="color:var(--accent-blue)">Athletic Testing ${statusLabel}</div>`;
     if(isProjected) combineHTML+=`<div class="combine-disclaimer"><strong>⚠ These numbers are projected estimates, not official results.</strong> The 2026 NFL Combine is in progress. Projections are based on position-average ranges adjusted by scouting grade. Official measurements will replace these as they are released. Check <a href="https://www.nfl.com/combine/" target="_blank" rel="noopener" style="color:var(--accent-blue)">NFL.com/combine</a> for real results.</div>`;
-    combineHTML+='<div class="combine-grid">';
+    // Check if fully DNP (official status, all drill values null)
     const drills=POS_DRILLS[prospect.pos]||POS_DRILLS.LB;
-    for(const k of Object.keys(COMBINE_LABELS)){
-      if(!drills[k]) continue;
+    const applicableDrillKeys=Object.keys(COMBINE_LABELS).filter(k=>drills[k]);
+    const isFullDNP=prospect.combine._status==='official'&&applicableDrillKeys.every(k=>prospect.combine[k]===null);
+    if(isFullDNP){
+      combineHTML+=`<div class="combine-dnp-full" style="padding:16px 20px;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:10px;margin:12px 0;color:var(--text-secondary);font-size:14px;text-align:center;">Did not participate in athletic testing — will test at Pro Day</div>`;
+    } else {
+    combineHTML+='<div class="combine-grid">';
+    for(const k of applicableDrillKeys){
       const val=prospect.combine[k];
       if(val===null){
         combineHTML+=`<div class="combine-stat dnp"><div class="cs-label">${COMBINE_LABELS[k]}</div><div class="cs-value cs-dnp">DNP</div><div class="cs-dnp-note">Did not participate — will test at Pro Day</div></div>`;
@@ -1340,6 +1345,7 @@ function openPlayerModal(prospect){
     const drillCount=Object.keys(drills).filter(k=>drills[k]).length;
     const doneCount=Object.keys(drills).filter(k=>drills[k]&&prospect.combine[k]!==null&&prospect.combine[k]!==undefined).length;
     combineHTML+=`</div><div style="margin:8px 0 16px;font-size:12px;color:var(--text-muted)">Projected Combine Score: <strong style="color:var(--accent-blue)">${cs}/100</strong> &bull; ${doneCount}/${drillCount} drills${isProjected?' (all estimated)':''}</div>`;
+    } // end else (not full DNP)
   }
   const comparables=findCombineComparables(prospect);
   if(comparables.length&&prospect.combine&&(prospect.combine.forty||prospect.combine.vert||prospect.combine.broad)){
@@ -1563,7 +1569,7 @@ function showLegalPage(page) {
 // ===== SHARE DRAFT =====
 function shareDraft(){
   const subtitle = document.getElementById('resultsSubtitle')?.textContent || '2026 NFL Mock Draft';
-  const grade = document.getElementById('resultsGradeHero')?.querySelector('.grade-letter')?.textContent || '';
+  const grade = document.getElementById('resultsGradeHero')?.querySelector('.rgh-letter')?.textContent || '';
   const gradeText = grade ? ` — Grade: ${grade}` : '';
   const text = `I just ran a 2026 NFL Mock Draft${gradeText}! Check out the full results:\n\n🏈 ${subtitle}\n\nhttps://mockdraft.onrender.com\n\n#NFLDraft #MockDraft #NFL2026`;
   if(navigator.share){
@@ -1614,6 +1620,24 @@ function closeCookieBanner(){
   const banner=document.getElementById('cookieBanner');
   if(banner){ banner.style.animation='slideDownCookie 0.25s ease forwards'; setTimeout(()=>{ banner.style.display='none'; },260); }
 }
+
+// ===== MOBILE NAV TOGGLE =====
+function toggleMobileNav(){
+  const btn=document.getElementById('hamburgerBtn');
+  const nav=document.getElementById('headerNav');
+  if(btn&&nav){
+    btn.classList.toggle('active');
+    nav.classList.toggle('mobile-open');
+  }
+}
+// Close mobile nav when a nav link is clicked
+document.addEventListener('click',function(e){
+  if(e.target.classList.contains('nav-link')){
+    const btn=document.getElementById('hamburgerBtn');
+    const nav=document.getElementById('headerNav');
+    if(btn&&nav){btn.classList.remove('active');nav.classList.remove('mobile-open');}
+  }
+});
 
 document.addEventListener('DOMContentLoaded',()=>{
   initTheme();
