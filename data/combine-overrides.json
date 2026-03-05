@@ -21,7 +21,7 @@
     "_status": "official",
     "forty": 4.50,
     "bench": null,
-    "vert": null,
+    "vert": 35,
     "broad": 129,
     "cone": null,
     "shuttle": null
@@ -37,7 +37,7 @@
   },
   "Carnell Tate": {
     "_status": "official",
-    "forty": 4.54,
+    "forty": 4.53,
     "bench": null,
     "vert": null,
     "broad": null,
@@ -145,12 +145,12 @@
   },
   "Spencer Fano": {
     "_status": "official",
-    "forty": 5.05,
+    "forty": 4.91,
     "bench": null,
-    "vert": null,
-    "broad": null,
-    "cone": null,
-    "shuttle": null
+    "vert": 32,
+    "broad": 111,
+    "cone": 7.34,
+    "shuttle": 4.67
   },
   "Blake Miller": {
     "_status": "official",
@@ -191,9 +191,9 @@
   "Zachariah Branch": {
     "_status": "official",
     "forty": 4.35,
-    "bench": null,
+    "bench": 20,
     "vert": 38,
-    "broad": null,
+    "broad": 125,
     "cone": null,
     "shuttle": null
   },
@@ -245,7 +245,7 @@
   "Jordyn Tyson": {
     "_status": "official",
     "forty": null,
-    "bench": null,
+    "bench": 26,
     "vert": null,
     "broad": null,
     "cone": null,
@@ -288,6 +288,393 @@
     "shuttle": null
   },
   "Nicholas Singleton": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Denzel Boston": {
+    "_status": "official",
+    "forty": 4.45,
+    "bench": null,
+    "vert": 35,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Colton Hood": {
+    "_status": "official",
+    "forty": 4.44,
+    "bench": null,
+    "vert": 40.5,
+    "broad": 125,
+    "cone": null,
+    "shuttle": null
+  },
+  "Monroe Freeling": {
+    "_status": "official",
+    "forty": 4.93,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Lee Hunter": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": 21.5,
+    "broad": 100,
+    "cone": null,
+    "shuttle": null
+  },
+  "Kadyn Proctor": {
+    "_status": "official",
+    "forty": 5.21,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Max Iheanachor": {
+    "_status": "official",
+    "forty": 4.91,
+    "bench": null,
+    "vert": null,
+    "broad": 115,
+    "cone": null,
+    "shuttle": null
+  },
+  "Akheem Mesidor": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "CJ Allen": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Peter Woods": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "R Mason Thomas": {
+    "_status": "official",
+    "forty": 4.67,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Anthony Hill Jr.": {
+    "_status": "official",
+    "forty": 4.51,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Jake Golday": {
+    "_status": "official",
+    "forty": 4.62,
+    "bench": null,
+    "vert": 39,
+    "broad": 125,
+    "cone": null,
+    "shuttle": null
+  },
+  "D'Angelo Ponds": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": 43.5,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Kamari Ramsey": {
+    "_status": "official",
+    "forty": 4.47,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Brandon Cisse": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": 41,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Emmanuel Pregnon": {
+    "_status": "official",
+    "forty": 5.21,
+    "bench": null,
+    "vert": 35,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Gennings Dunker": {
+    "_status": "official",
+    "forty": 5.18,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Germie Bernard": {
+    "_status": "official",
+    "forty": 4.45,
+    "bench": null,
+    "vert": 32.5,
+    "broad": 125,
+    "cone": null,
+    "shuttle": null
+  },
+  "Chris Brazzell II": {
+    "_status": "official",
+    "forty": 4.37,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Elijah Sarratt": {
+    "_status": "official",
+    "forty": 4.61,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Josiah Trotter": {
+    "_status": "official",
+    "forty": null,
+    "bench": 27,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Caleb Tiernan": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": 35.5,
+    "broad": 111,
+    "cone": null,
+    "shuttle": null
+  },
+  "Max Klare": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Ty Simpson": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Christen Miller": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Garrett Nussmeier": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Carson Beck": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Dante Moore": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Olaivavega Ioane": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Francis Mauigoa": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Keionte Scott": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Antonio Williams": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Zion Young": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Chris Bell": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "LT Overton": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Isaiah World": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Harold Perkins Jr.": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Keith Abney II": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Romello Height": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "A.J. Haulcy": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Derrick Moore": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Caleb Lomu": {
+    "_status": "official",
+    "forty": null,
+    "bench": null,
+    "vert": null,
+    "broad": null,
+    "cone": null,
+    "shuttle": null
+  },
+  "Kayden McDonald": {
     "_status": "official",
     "forty": null,
     "bench": null,

@@ -138,38 +138,38 @@ app.delete('/api/drafts/:id', async (req, res) => {
 
 // RSS proxy for team news (avoids CORS)
 const TEAM_RSS = {
-  LV: 'https://www.silverandblackpride.com/rss/current',
-  NYJ: 'https://www.ganggreennation.com/rss/current',
-  ARI: 'https://www.revengeofthebirds.com/rss/current',
-  TEN: 'https://www.musiccitymiracles.com/rss/current',
-  NYG: 'https://www.bigblueview.com/rss/current',
-  CLE: 'https://www.dawgsbynature.com/rss/current',
-  WAS: 'https://www.hogshaven.com/rss/current',
-  NO: 'https://www.canalstreetchronicles.com/rss/current',
-  KC: 'https://www.arrowheadpride.com/rss/current',
-  CIN: 'https://www.cincinnatijungle.com/rss/current',
-  MIA: 'https://www.thephinsider.com/rss/current',
-  DAL: 'https://www.bloggingtheboys.com/rss/current',
-  ATL: 'https://www.thefalcoholic.com/rss/current',
-  BAL: 'https://www.baltimorebeatdown.com/rss/current',
-  TB: 'https://www.bucsation.com/rss/current',
-  IND: 'https://www.stampedeblue.com/rss/current',
-  DET: 'https://www.prideofdetroit.com/rss/current',
-  MIN: 'https://www.dailynorseman.com/rss/current',
-  CAR: 'https://www.catscratchreader.com/rss/current',
-  GB: 'https://www.acmepackingcompany.com/rss/current',
-  PIT: 'https://www.behindthesteelcurtain.com/rss/current',
-  LAC: 'https://www.boltsfromtheblue.com/rss/current',
-  PHI: 'https://www.bleedinggreennation.com/rss/current',
-  JAX: 'https://www.bigcatcountry.com/rss/current',
-  CHI: 'https://www.windycitygridiron.com/rss/current',
-  BUF: 'https://www.buffalorumblings.com/rss/current',
-  SF: 'https://www.ninersnation.com/rss/current',
-  HOU: 'https://www.battleredblog.com/rss/current',
-  LAR: 'https://www.turfshowtimes.com/rss/current',
-  DEN: 'https://www.milehighreport.com/rss/current',
-  NE: 'https://www.patspulpit.com/rss/current',
-  SEA: 'https://www.fieldgulls.com/rss/current',
+  LV: 'https://www.silverandblackpride.com/rss/index.xml',
+  NYJ: 'https://www.ganggreennation.com/rss/index.xml',
+  ARI: 'https://www.revengeofthebirds.com/rss/index.xml',
+  TEN: 'https://www.musiccitymiracles.com/rss/index.xml',
+  NYG: 'https://www.bigblueview.com/rss/index.xml',
+  CLE: 'https://www.dawgsbynature.com/rss/index.xml',
+  WAS: 'https://www.hogshaven.com/rss/index.xml',
+  NO: 'https://www.canalstreetchronicles.com/rss/index.xml',
+  KC: 'https://www.arrowheadpride.com/rss/index.xml',
+  CIN: 'https://www.cincinnatijungle.com/rss/index.xml',
+  MIA: 'https://www.thephinsider.com/rss/index.xml',
+  DAL: 'https://www.bloggingtheboys.com/rss/index.xml',
+  ATL: 'https://www.thefalcoholic.com/rss/index.xml',
+  BAL: 'https://www.baltimorebeatdown.com/rss/index.xml',
+  TB: 'https://www.bucsation.com/rss/index.xml',
+  IND: 'https://www.stampedeblue.com/rss/index.xml',
+  DET: 'https://www.prideofdetroit.com/rss/index.xml',
+  MIN: 'https://www.dailynorseman.com/rss/index.xml',
+  CAR: 'https://www.catscratchreader.com/rss/index.xml',
+  GB: 'https://www.acmepackingcompany.com/rss/index.xml',
+  PIT: 'https://www.behindthesteelcurtain.com/rss/index.xml',
+  LAC: 'https://www.boltsfromtheblue.com/rss/index.xml',
+  PHI: 'https://www.bleedinggreennation.com/rss/index.xml',
+  JAX: 'https://www.bigcatcountry.com/rss/index.xml',
+  CHI: 'https://www.windycitygridiron.com/rss/index.xml',
+  BUF: 'https://www.buffalorumblings.com/rss/index.xml',
+  SF: 'https://www.ninersnation.com/rss/index.xml',
+  HOU: 'https://www.battleredblog.com/rss/index.xml',
+  LAR: 'https://www.turfshowtimes.com/rss/index.xml',
+  DEN: 'https://www.milehighreport.com/rss/index.xml',
+  NE: 'https://www.patspulpit.com/rss/index.xml',
+  SEA: 'https://www.fieldgulls.com/rss/index.xml',
 };
 
 app.get('/api/news/:team', async (req, res) => {
@@ -184,12 +184,27 @@ app.get('/api/news/:team', async (req, res) => {
     const text = await response.text();
     const xml2js = require('xml2js');
     const parsed = await xml2js.parseStringPromise(text);
-    const items = (parsed?.rss?.channel?.[0]?.item || []).slice(0, 15).map(item => ({
-      title: item.title?.[0] || '',
-      link: item.link?.[0] || '',
-      pubDate: item.pubDate?.[0] || '',
-      description: (item.description?.[0] || '').replace(/<[^>]*>/g, '').slice(0, 200),
-    }));
+    let items;
+    if (parsed?.rss?.channel?.[0]?.item) {
+      // RSS format
+      items = parsed.rss.channel[0].item.slice(0, 15).map(item => ({
+        title: item.title?.[0] || '',
+        link: item.link?.[0] || '',
+        pubDate: item.pubDate?.[0] || '',
+        description: (item.description?.[0] || '').replace(/<[^>]*>/g, '').slice(0, 200),
+      }));
+    } else if (parsed?.feed?.entry) {
+      // Atom format
+      items = parsed.feed.entry.slice(0, 15).map(entry => {
+        const link = entry.link?.find(l => l.$?.rel === 'alternate')?.$.href || entry.link?.[0]?.$.href || '';
+        const title = entry.title?.[0]?._ || entry.title?.[0] || '';
+        const updated = entry.updated?.[0] || entry.published?.[0] || '';
+        const summary = (entry.summary?.[0]?._ || entry.summary?.[0] || entry.content?.[0]?._ || '').replace(/<[^>]*>/g, '').slice(0, 200);
+        return { title, link, pubDate: updated, description: summary };
+      });
+    } else {
+      items = [];
+    }
     res.json({ team, source: 'SB Nation', items });
   } catch (err) {
     res.status(500).json({ error: 'Failed to fetch RSS', detail: err.message });
