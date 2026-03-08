@@ -851,53 +851,72 @@ function getTeamDraftGrade(ti){
 }
 
 // ===== AI PICK LOGIC =====
-function aiPick(pickNum,predictMode){
+function scoreProspects(pickNum,predictMode){
   const teamIdx=getTeamForPick(pickNum);
   const team=TEAMS[teamIdx];
   const round=getRoundForPick(pickNum);
   const locks=ROSTER_LOCKS[team.abbr]||[];
-  let bestScore=-Infinity,bestP=null;
-  available.forEach(p=>{
+  const scored=available.map(p=>{
     let score=p.grade;
     const combineScore=getCombineScore(p);
-    score+=(combineScore-50)*0.15;
+    score+=(combineScore-50)*(predictMode?0.2:0.15);
     const posVal=POS_DRAFT_VALUE[p.pos]||0.85;
     const wouldLock=locks.some(lp=>posMatchesNeed(p.pos,lp));
     const isExpiring=(ROSTER_EXPIRING[team.abbr]||[]).some(ep=>posMatchesNeed(p.pos,ep));
     const isLocked=wouldLock&&!isExpiring;
     const ni=team.needs.findIndex(n=>posMatchesNeed(p.pos,n));
-    if(ni!==-1)score+=(5-ni)*3;
-    if(p.pos==='QB'&&!team.needs.includes('QB'))score-=18;
+    if(predictMode){
+      if(ni===0)score+=16;else if(ni===1)score+=12;else if(ni===2)score+=7;else if(ni>=3)score+=3;
+    }else{
+      if(ni!==-1)score+=(5-ni)*3;
+    }
+    if(p.pos==='QB'&&!team.needs.includes('QB'))score-=(predictMode?20:18);
     if(round>=4&&p.pos==='QB'&&!team.needs.includes('QB'))score-=10;
-    // Roster lock — team already has a star at this position
     if(isLocked){score-=40;if(round<=2)score-=15;}
-    // Non-need devaluation scaled by position value tier
     if(ni===-1){
       score-=(1-posVal)*30;
       if(round<=2)score-=(1-posVal)*20;
     }
+    let tendencyMatch=false;
     if(team.tendency){
-      if(team.tendency.posPrefs.some(pp=>posMatchesNeed(p.pos,pp)))score+=2;
+      if(predictMode){const bpaW=team.tendency.bpa||0.5;score=score*(1-bpaW*0.3)+p.grade*(bpaW*0.3);}
+      if(team.tendency.posPrefs.some(pp=>posMatchesNeed(p.pos,pp))){score+=(predictMode?3:2);tendencyMatch=true;}
       const conf=SCHOOL_CONF[p.school]||'';
-      if(conf===team.tendency.conf)score+=1;
+      if(conf===team.tendency.conf)score+=(predictMode?1.5:1);
     }
-    // Slide protection scaled by position value
     const expectedSlot=ALL_PROSPECTS.indexOf(p);
     const slide=pickNum-expectedSlot;
     if(p.grade>=93&&slide>10)score+=25*posVal;
     if(p.grade>=90&&slide>15)score+=20*posVal;
     if(slide>6)score+=(slide-6)*3*posVal;
     if(slide>14)score+=(slide-14)*5*posVal;
-    if(p.redFlag)score-=8+(predictMode?3:srand()*6);
-    // Expert mode: blend consensus big-board rank into AI scoring
+    if(p.redFlag)score-=(predictMode?10:(8+srand()*6));
     if(window.expertMode){
       const crank=getExpertConsensusRank(p.name);
-      if(crank<999) score+=(33-crank)*0.6; // up to +19.2 for #1 consensus pick
+      if(crank<999) score+=(33-crank)*0.6;
     }
     score+=(srand()-0.5)*(predictMode?1.5:2.5);
-    if(score>bestScore){bestScore=score;bestP=p;}
+    return{prospect:p,score,combineScore,needIndex:ni,isLocked,slide,posVal,tendencyMatch,rank:ALL_PROSPECTS.indexOf(p)+1};
   });
-  return bestP||available[0];
+  scored.sort((a,b)=>b.score-a.score);
+  return{scored,team,teamIdx,round};
+}
+
+function aiPick(pickNum,predictMode){
+  const{scored,team,teamIdx}=scoreProspects(pickNum,predictMode);
+  const winner=scored[0];
+  if(!winner) return available[0];
+  // Collect top 3 runners-up from different position groups
+  const runnersUp=[];
+  const seenPos=new Set([winner.prospect.pos]);
+  for(let i=1;i<scored.length&&runnersUp.length<3;i++){
+    if(!seenPos.has(scored[i].prospect.pos)){
+      seenPos.add(scored[i].prospect.pos);
+      runnersUp.push(scored[i]);
+    }
+  }
+  winner.prospect._pickContext={winner,runnersUp,teamNeeds:team.needs,teamAbbr:team.abbr,teamName:team.name};
+  return winner.prospect;
 }
 
 function makePick(prospect){
@@ -957,7 +976,7 @@ function executeTrade(offer){
 }
 
 // ===== PREDICT MODE =====
-function generatePickReason(pickNum,prospect,team,ni,combineScore,slide,isLocked){
+function generatePickReason(pickNum,prospect,team,ni,combineScore,slide,isLocked,runnersUp){
   const parts=[];
   const rank=ALL_PROSPECTS.indexOf(prospect)+1;
   const posVal=POS_DRAFT_VALUE[prospect.pos]||0.85;
@@ -979,6 +998,14 @@ function generatePickReason(pickNum,prospect,team,ni,combineScore,slide,isLocked
   else if(slide>5) parts.push(`Good value at this spot`);
   else if(slide<-8) parts.push(`Slight reach, but fills a critical roster hole`);
   if(prospect.redFlag) parts.push(`⚠ ${prospect.redFlag} may have caused a slide`);
+  if(runnersUp&&runnersUp.length){
+    const also=runnersUp.map(r=>{
+      const rni=team.needs.findIndex(n=>posMatchesNeed(r.prospect.pos,n));
+      const note=rni>=0?` (${team.abbr} need #${rni+1})`:'';
+      return `${r.prospect.name} (${r.prospect.pos}, ${r.prospect.grade})${note}`;
+    });
+    parts.push(`Also considered: ${also.join('; ')}`);
+  }
   return parts.join('. ')+'.';
 }
 
@@ -988,54 +1015,18 @@ function runPredictDraft(){
   initPickOwnership();
   const results=[];
   for(let i=0;i<TOTAL_PICKS;i++){
-    const ti=getTeamForPick(i);
-    const team=TEAMS[ti];
-    const round=getRoundForPick(i);
-    const locks=ROSTER_LOCKS[team.abbr]||[];
-    let bestScore=-Infinity,bestP=null;
-    available.forEach(p=>{
-      let score=p.grade;
-      const cs=getCombineScore(p);
-      score+=(cs-50)*0.2;
-      const posVal=POS_DRAFT_VALUE[p.pos]||0.85;
-      const wouldLock=locks.some(lp=>posMatchesNeed(p.pos,lp));
-      const isExpiring=(ROSTER_EXPIRING[team.abbr]||[]).some(ep=>posMatchesNeed(p.pos,ep));
-      const isLocked=wouldLock&&!isExpiring;
-      const ni=team.needs.findIndex(n=>posMatchesNeed(p.pos,n));
-      if(ni===0)score+=16;else if(ni===1)score+=12;else if(ni===2)score+=7;else if(ni>=3)score+=3;
-      if(p.pos==='QB'&&!team.needs.includes('QB'))score-=20;
-      if(isLocked){score-=40;if(round<=2)score-=15;}
-      if(ni===-1){
-        score-=(1-posVal)*30;
-        if(round<=2)score-=(1-posVal)*20;
-      }
-      if(team.tendency){
-        const bpaW=team.tendency.bpa||0.5;
-        score=score*(1-bpaW*0.3)+p.grade*(bpaW*0.3);
-        if(team.tendency.posPrefs.some(pp=>posMatchesNeed(p.pos,pp)))score+=3;
-        const conf=SCHOOL_CONF[p.school]||'';
-        if(conf===team.tendency.conf)score+=1.5;
-      }
-      const expectedSlot=ALL_PROSPECTS.indexOf(p);
-      const slide=i-expectedSlot;
-      if(p.grade>=93&&slide>10)score+=25*posVal;
-      if(p.grade>=90&&slide>15)score+=20*posVal;
-      if(slide>6)score+=(slide-6)*3*posVal;
-      if(slide>14)score+=(slide-14)*5*posVal;
-      if(p.redFlag)score-=10;
-      if(score>bestScore){bestScore=score;bestP=p;}
-    });
-    const prospect=bestP||available[0];
-    const grade=gradePick(i,prospect,ti);
-    const ni=team.needs.findIndex(n=>posMatchesNeed(prospect.pos,n));
-    const cs=getCombineScore(prospect);
-    const locks2=ROSTER_LOCKS[team.abbr]||[];
-    const isLocked=locks2.some(lp=>posMatchesNeed(prospect.pos,lp));
-    const expectedSlot=ALL_PROSPECTS.indexOf(prospect);
-    const slide=i-expectedSlot;
-    const reason=generatePickReason(i,prospect,team,ni,cs,slide,isLocked);
+    const{scored,team,teamIdx}=scoreProspects(i,true);
+    const winner=scored[0];
+    const prospect=winner?winner.prospect:available[0];
+    const grade=gradePick(i,prospect,teamIdx);
+    const runnersUp=[];
+    const seenPos=new Set([prospect.pos]);
+    for(let j=1;j<scored.length&&runnersUp.length<2;j++){
+      if(!seenPos.has(scored[j].prospect.pos)){seenPos.add(scored[j].prospect.pos);runnersUp.push(scored[j]);}
+    }
+    const reason=generatePickReason(i,prospect,team,winner.needIndex,winner.combineScore,winner.slide,winner.isLocked,runnersUp);
     const confidence=Math.min(95,Math.max(25,85-i*0.25-(Math.floor(i/32)*5)));
-    results.push({pick:i,teamIdx:ti,prospect,grade,confidence:Math.round(confidence),reason});
+    results.push({pick:i,teamIdx,prospect,grade,confidence:Math.round(confidence),reason});
     available=available.filter(p=>p!==prospect);
   }
   return results;
@@ -1046,6 +1037,7 @@ function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classL
 
 function goHome(){
   stopSim();currentPick=0;draftResults=[];available=[];userTeamIdx=-1;mode='manual';tradeLog=[];
+  ALL_PROSPECTS.forEach(p=>delete p._pickContext);
   showScreen('homeScreen');updatePickCounter();
   const cb=document.getElementById('expertModeCheck');if(cb)cb.checked=!!window.expertMode;
 }
@@ -1240,7 +1232,36 @@ function showPickAnnouncement(result){
   const pc=POS_COLORS[prospect.pos]||'#3498db';const ini=prospect.name.split(' ').map(w=>w[0]).join('');
   const disp=document.getElementById('pickDisplay');disp.classList.add('active');
   document.getElementById('userPickArea').classList.remove('active');
-  document.getElementById('pickAnnouncement').innerHTML=`<div class="animate-in"><div class="pa-label">Pick ${currentPick}</div><div class="pa-team">The ${team.name} select</div><div class="pa-avatar" style="background:${pc}">${ini}</div><div class="pa-name">${prospect.name}</div><div class="pa-details">${prospect.pos} — ${prospect.school}</div><div class="pa-grade-badge ${gradeColor(grade)}">${grade}</div><button class="pa-view-btn" onclick="openPlayerModal(ALL_PROSPECTS[${ALL_PROSPECTS.indexOf(prospect)}])">View Player Profile</button></div>`;
+  const ctx=prospect._pickContext;
+  let breakdownHTML='';
+  if(ctx){
+    const needsHTML=ctx.teamNeeds.map((n,i)=>`<span class="pa-need-tag${posMatchesNeed(prospect.pos,n)?' pa-need-filled':''}">${i===0?'&#9733; ':''}${n}</span>`).join('');
+    const w=ctx.winner;
+    const needLabel=w.needIndex===0?'Fills #1 need':w.needIndex===1?'Fills top-2 need':w.needIndex>=0?'Fills positional need':'Best player available';
+    const factors=[needLabel];
+    if(w.combineScore>70)factors.push('Elite athleticism');
+    else if(w.combineScore>55)factors.push('Solid athletic testing');
+    else if(w.combineScore<35)factors.push('Below-average testing');
+    if(w.slide>10)factors.push(`Slid ${w.slide} spots — great value`);
+    else if(w.slide>5)factors.push('Good value at this slot');
+    else if(w.slide<-8)factors.push('Slight reach');
+    if(w.tendencyMatch)factors.push(`Fits ${ctx.teamAbbr} draft tendencies`);
+    if(prospect.redFlag)factors.push(`Warning: ${prospect.redFlag}`);
+    let runnersHTML='';
+    if(ctx.runnersUp.length){
+      runnersHTML='<div class="pa-runners-label">Also Considered</div><div class="pa-runners">';
+      ctx.runnersUp.forEach(r=>{
+        const rni=ctx.teamNeeds.findIndex(n=>posMatchesNeed(r.prospect.pos,n));
+        const rNeedLabel=rni===0?'#1 need':rni>=0?'Need #'+(rni+1):'Non-need';
+        const rpc=POS_COLORS[r.prospect.pos]||'#3498db';
+        runnersHTML+=`<div class="pa-runner"><div class="pa-runner-avatar" style="background:${rpc}">${r.prospect.name.split(' ').map(x=>x[0]).join('')}</div><div class="pa-runner-info"><div class="pa-runner-name">${r.prospect.name}</div><div class="pa-runner-meta">${r.prospect.pos} — ${r.prospect.school} — Grade ${r.prospect.grade}</div><div class="pa-runner-reason">${rNeedLabel} · Ranked #${r.rank}</div></div></div>`;
+      });
+      runnersHTML+='</div>';
+    }
+    breakdownHTML=`<div class="pa-breakdown"><div class="pa-needs-row">${needsHTML}</div><div class="pa-why-label">Why This Pick</div><div class="pa-factors">${factors.map(f=>`<span class="pa-factor">${f}</span>`).join('')}</div>${runnersHTML}</div>`;
+    delete prospect._pickContext;
+  }
+  document.getElementById('pickAnnouncement').innerHTML=`<div class="animate-in"><div class="pa-label">Pick ${currentPick}</div><div class="pa-team">The ${team.name} select</div><div class="pa-avatar" style="background:${pc}">${ini}</div><div class="pa-name">${prospect.name}</div><div class="pa-details">${prospect.pos} — ${prospect.school}${prospect.height?' — '+prospect.height+', '+prospect.weight+' lbs':''}</div><div class="pa-grade-badge ${gradeColor(grade)}">${grade}</div>${breakdownHTML}<button class="pa-view-btn" onclick="openPlayerModal(ALL_PROSPECTS[${ALL_PROSPECTS.indexOf(prospect)}])">View Player Profile</button></div>`;
 }
 
 // ===== PROSPECT LIST =====
