@@ -10,7 +10,7 @@
   },
   "Arvell Reese": {
     "_status": "official",
-    "forty": 4.47,
+    "forty": 4.46,
     "bench": null,
     "vert": null,
     "broad": null,
@@ -47,7 +47,7 @@
   "Kenyon Sadiq": {
     "_status": "official",
     "forty": 4.39,
-    "bench": null,
+    "bench": 26,
     "vert": 43.5,
     "broad": 133,
     "cone": null,
@@ -56,7 +56,7 @@
   "Dillon Thieneman": {
     "_status": "official",
     "forty": 4.35,
-    "bench": null,
+    "bench": 18,
     "vert": 41,
     "broad": 125,
     "cone": null,
@@ -93,8 +93,8 @@
     "_status": "official",
     "forty": 4.59,
     "bench": null,
-    "vert": null,
-    "broad": null,
+    "vert": 32.5,
+    "broad": 115,
     "cone": null,
     "shuttle": null
   },
@@ -102,7 +102,7 @@
     "_status": "official",
     "forty": 4.42,
     "bench": null,
-    "vert": null,
+    "vert": 37,
     "broad": null,
     "cone": null,
     "shuttle": null
@@ -119,7 +119,7 @@
   "Jadarian Price": {
     "_status": "official",
     "forty": 4.49,
-    "bench": null,
+    "bench": 21,
     "vert": 35,
     "broad": 124,
     "cone": null,
@@ -137,7 +137,7 @@
   "Avieon Terrell": {
     "_status": "official",
     "forty": null,
-    "bench": null,
+    "bench": 17,
     "vert": 34,
     "broad": 123,
     "cone": null,
@@ -154,10 +154,10 @@
   },
   "Blake Miller": {
     "_status": "official",
-    "forty": 5.18,
+    "forty": 5.04,
     "bench": null,
-    "vert": null,
-    "broad": null,
+    "vert": 32,
+    "broad": 113,
     "cone": null,
     "shuttle": null
   },
@@ -182,7 +182,7 @@
   "Deion Burks": {
     "_status": "official",
     "forty": 4.30,
-    "bench": null,
+    "bench": 26,
     "vert": 42.5,
     "broad": 131,
     "cone": null,
@@ -236,7 +236,7 @@
   "Jermod McCoy": {
     "_status": "official",
     "forty": null,
-    "bench": null,
+    "bench": 14,
     "vert": null,
     "broad": null,
     "cone": null,
@@ -281,7 +281,7 @@
   "Jonah Coleman": {
     "_status": "official",
     "forty": null,
-    "bench": null,
+    "bench": 22,
     "vert": null,
     "broad": null,
     "cone": null,
@@ -298,12 +298,12 @@
   },
   "Denzel Boston": {
     "_status": "official",
-    "forty": 4.45,
+    "forty": null,
     "bench": null,
     "vert": 35,
     "broad": null,
     "cone": null,
-    "shuttle": null
+    "shuttle": 4.28
   },
   "Colton Hood": {
     "_status": "official",
@@ -318,14 +318,14 @@
     "_status": "official",
     "forty": 4.93,
     "bench": null,
-    "vert": null,
-    "broad": null,
+    "vert": 33.5,
+    "broad": 115,
     "cone": null,
     "shuttle": null
   },
   "Lee Hunter": {
     "_status": "official",
-    "forty": null,
+    "forty": 5.18,
     "bench": null,
     "vert": 21.5,
     "broad": 100,
@@ -336,8 +336,8 @@
     "_status": "official",
     "forty": 5.21,
     "bench": null,
-    "vert": null,
-    "broad": null,
+    "vert": 32.5,
+    "broad": 109,
     "cone": null,
     "shuttle": null
   },
@@ -345,7 +345,7 @@
     "_status": "official",
     "forty": 4.91,
     "bench": null,
-    "vert": null,
+    "vert": 30.5,
     "broad": 115,
     "cone": null,
     "shuttle": null
@@ -389,9 +389,9 @@
   "Anthony Hill Jr.": {
     "_status": "official",
     "forty": 4.51,
-    "bench": null,
-    "vert": null,
-    "broad": null,
+    "bench": 21,
+    "vert": 37,
+    "broad": 125,
     "cone": null,
     "shuttle": null
   },
@@ -401,8 +401,8 @@
     "bench": null,
     "vert": 39,
     "broad": 125,
-    "cone": null,
-    "shuttle": null
+    "cone": 7.02,
+    "shuttle": 4.34
   },
   "D'Angelo Ponds": {
     "_status": "official",
@@ -416,9 +416,9 @@
   "Kamari Ramsey": {
     "_status": "official",
     "forty": 4.47,
-    "bench": null,
-    "vert": null,
-    "broad": null,
+    "bench": 16,
+    "vert": 36,
+    "broad": 120,
     "cone": null,
     "shuttle": null
   },
@@ -427,7 +427,7 @@
     "forty": null,
     "bench": null,
     "vert": 41,
-    "broad": null,
+    "broad": 131,
     "cone": null,
     "shuttle": null
   },
@@ -436,7 +436,7 @@
     "forty": 5.21,
     "bench": null,
     "vert": 35,
-    "broad": null,
+    "broad": 111,
     "cone": null,
     "shuttle": null
   },
@@ -444,19 +444,19 @@
     "_status": "official",
     "forty": 5.18,
     "bench": null,
-    "vert": null,
-    "broad": null,
+    "vert": 32.5,
+    "broad": 108,
     "cone": null,
-    "shuttle": null
+    "shuttle": 4.63
   },
   "Germie Bernard": {
     "_status": "official",
-    "forty": 4.45,
+    "forty": 4.48,
     "bench": null,
     "vert": 32.5,
     "broad": 125,
-    "cone": null,
-    "shuttle": null
+    "cone": 6.71,
+    "shuttle": 4.31
   },
   "Chris Brazzell II": {
     "_status": "official",
@@ -469,7 +469,7 @@
   },
   "Elijah Sarratt": {
     "_status": "official",
-    "forty": 4.61,
+    "forty": null,
     "bench": null,
     "vert": null,
     "broad": null,
@@ -552,8 +552,8 @@
     "_status": "official",
     "forty": null,
     "bench": null,
-    "vert": null,
-    "broad": null,
+    "vert": 31.5,
+    "broad": 104,
     "cone": null,
     "shuttle": null
   },
@@ -577,11 +577,11 @@
   },
   "Antonio Williams": {
     "_status": "official",
-    "forty": null,
-    "bench": null,
-    "vert": null,
-    "broad": null,
-    "cone": null,
+    "forty": 4.41,
+    "bench": 10,
+    "vert": 39.5,
+    "broad": 124,
+    "cone": 7.00,
     "shuttle": null
   },
   "Zion Young": {
@@ -604,7 +604,7 @@
   },
   "LT Overton": {
     "_status": "official",
-    "forty": null,
+    "forty": 4.87,
     "bench": null,
     "vert": null,
     "broad": null,
@@ -632,7 +632,7 @@
   "Keith Abney II": {
     "_status": "official",
     "forty": null,
-    "bench": null,
+    "bench": 15,
     "vert": null,
     "broad": null,
     "cone": null,
@@ -640,16 +640,16 @@
   },
   "Romello Height": {
     "_status": "official",
-    "forty": null,
+    "forty": 4.64,
     "bench": null,
-    "vert": null,
-    "broad": null,
+    "vert": 39,
+    "broad": 125,
     "cone": null,
     "shuttle": null
   },
   "A.J. Haulcy": {
     "_status": "official",
-    "forty": null,
+    "forty": 4.52,
     "bench": null,
     "vert": null,
     "broad": null,
@@ -667,10 +667,10 @@
   },
   "Caleb Lomu": {
     "_status": "official",
-    "forty": null,
+    "forty": 4.99,
     "bench": null,
-    "vert": null,
-    "broad": null,
+    "vert": 32.5,
+    "broad": 113,
     "cone": null,
     "shuttle": null
   },
