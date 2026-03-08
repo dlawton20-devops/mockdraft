@@ -595,11 +595,12 @@ header {
   border-radius: 14px; padding: 16px;
   display: flex; flex-direction: column;
 }
+.panel-card:last-child { flex: 1; min-height: 0; overflow: hidden; }
 .panel-card h3 {
   font-size: 12px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 12px;
 }
-.bpa-list { display: flex; flex-direction: column; gap: 4px; overflow-y: auto; max-height: calc(100vh - 400px); }
+.bpa-list { display: flex; flex-direction: column; gap: 4px; overflow-y: auto; flex: 1; min-height: 0; max-height: calc(100vh - 200px); }
 .bpa-row {
   display: flex; align-items: center; gap: 8px;
   padding: 6px 8px; border-radius: 6px; cursor: pointer;

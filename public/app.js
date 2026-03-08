@@ -1198,7 +1198,7 @@ function renderDraftBoard(){
 // ===== BPA =====
 function renderBPA(){
   const list=document.getElementById('bpaList');
-  list.innerHTML=available.slice(0,20).map((p,i)=>`<div class="bpa-row" onclick="openPlayerModal(ALL_PROSPECTS[${ALL_PROSPECTS.indexOf(p)}])"><div class="bpa-rank">${i+1}</div><div class="bpa-name">${p.name}</div><div class="bpa-pos">${p.pos}</div><div class="bpa-grade">${p.grade}</div></div>`).join('');
+  list.innerHTML=available.map((p,i)=>`<div class="bpa-row" onclick="openPlayerModal(ALL_PROSPECTS[${ALL_PROSPECTS.indexOf(p)}])"><div class="bpa-rank">${i+1}</div><div class="bpa-name">${p.name}</div><div class="bpa-pos">${p.pos}</div><div class="bpa-grade">${p.grade}</div></div>`).join('');
 }
 
 // ===== MY GRADE =====
