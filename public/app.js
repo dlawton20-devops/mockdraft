@@ -776,7 +776,7 @@ function generateProspects(){
     const allW=W_P[pos]||['technique'];const weaknesses=[];const usW=new Set();for(let i=0;i<2;i++){let w=pickR(allW);let a=0;while(usW.has(w)&&a<20){w=pickR(allW);a++;}usW.add(w);weaknesses.push('Needs to improve '+w);}
     const pm=meas[pos]||{h:['6-1'],w:[210]};
     const bonus=(grade-60)/5;
-    const prospect={id:fn.replace(/\s/g,'-').toLowerCase(),name:fn,pos,school,grade,bio,strengths,weaknesses,height:pickR(pm.h),weight:pickR(pm.w),combine:genCombine(pos,bonus)};
+    const prospect={id:fn.replace(/\s/g,'-').toLowerCase(),name:fn,pos,school,grade,bio,strengths,weaknesses,height:pickR(pm.h),weight:pickR(pm.w),combine:null};
     if(srand()<0.10){prospect.redFlag=pickR(RED_FLAGS);}
     ALL_PROSPECTS.push(prospect);
     needed--;if(needed%30===0)gradeIdx++;
