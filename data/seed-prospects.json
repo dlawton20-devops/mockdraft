@@ -2258,5 +2258,65 @@
       "shuttle": null,
       "_status": "official"
     }
+  },
+  {
+    "name": "Treydan Stukes",
+    "pos": "DB",
+    "school": "Arizona",
+    "grade": 82,
+    "height": "6-2",
+    "weight": 195,
+    "bio": "Stukes is the ultimate chess piece — plays slot CB, boundary CB and free safety. Jeremiah has him going #29 overall to KC with a Trent McDuffie comp. Ran 4.33 at combine with a 38\" vert and 130\" broad. 7 career INTs. Some teams love him; he has been very impressive in pre-draft interviews.",
+    "strengths": [
+      "Official 4.33 forty — elite speed",
+      "Versatile — slot/boundary/free safety",
+      "Ball-hawking instincts — 7 career INTs",
+      "High football IQ and character"
+    ],
+    "weaknesses": [
+      "Older prospect — 24 years old",
+      "2024 ACL tear in medical history",
+      "Struggles vs twitchy WRs in press-man",
+      "Takes poor pursuit angles in run support"
+    ],
+    "combine": {
+      "forty": 4.33,
+      "bench": null,
+      "vert": 38,
+      "broad": 130,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Chris Johnson",
+    "pos": "CB",
+    "school": "San Diego State",
+    "grade": 80,
+    "height": "6-0",
+    "weight": 193,
+    "bio": "Johnson is a hyperaware coverage specialist with instinctive eyes and fluid movement skills. Elite 2025 production: 92.4 PFF coverage grade, 16.1 passer rating allowed when targeted, 4 INTs (2 returned for TDs), 5 PBUs. Jeremiah projects him to the Patriots at #31.",
+    "strengths": [
+      "Elite 2025 ball production — 4 INTs, 2 pick-6s",
+      "92.4 PFF coverage grade",
+      "Instinctive and hyperaware",
+      "Versatile — can line up at multiple spots"
+    ],
+    "weaknesses": [
+      "Group of 5 level of competition",
+      "Run defense grade below average",
+      "Primarily a coverage specialist",
+      "Still adjusting to NFL-caliber receivers"
+    ],
+    "combine": {
+      "forty": 4.48,
+      "bench": null,
+      "vert": 37,
+      "broad": 123,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   }
 ]

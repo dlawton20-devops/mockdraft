@@ -293,7 +293,7 @@
     "name": "Olaivavega Ioane",
     "pos": "IOL",
     "school": "Penn State",
-    "grade": 93,
+    "grade": 95,
     "height": "6-3",
     "weight": 315,
     "bio": "Ioane was a dominant left guard with a thick build and outstanding strength. In the run game he latches, runs his feet and finishes. Tremendous upper torque.",
@@ -380,7 +380,7 @@
     "name": "Spencer Fano",
     "pos": "OT",
     "school": "Utah",
-    "grade": 94,
+    "grade": 96,
     "height": "6-5",
     "weight": 315,
     "bio": "Fano measured at 6'6\", 302 lbs at the 2026 Combine with a 4.91 forty. Excellent size, strength and quickness. Easily covers up speed rushers and stalls bull rushers with core strength. Outstanding play temperament and consistently regarded as a top OT prospect.",
@@ -496,7 +496,7 @@
     "name": "Denzel Boston",
     "pos": "WR",
     "school": "Washington",
-    "grade": 86,
+    "grade": 87,
     "height": "6-3",
     "weight": 210,
     "bio": "Boston is a big-framed wideout with exceptional ball skills. Huge catch radius, plays above the rim in the red zone. Courtland Sutton comparisons.",
@@ -554,7 +554,7 @@
     "name": "Akheem Mesidor",
     "pos": "EDGE",
     "school": "Miami",
-    "grade": 89,
+    "grade": 90,
     "height": "6-3",
     "weight": 265,
     "bio": "Mesidor was highly productive with ideal frame, relentless motor and pass-rush instincts. His game is about power — shakes, bulls, pushes and pulls for pressures.",
@@ -670,7 +670,7 @@
     "name": "Blake Miller",
     "pos": "OT",
     "school": "Clemson",
-    "grade": 89,
+    "grade": 91,
     "height": "6-6",
     "weight": 318,
     "bio": "Miller is an iron man — 54 starts at RT. High school wrestler with ideal size, length and strength. His 5.04 forty at the 2026 Combine was below average for tackles but acceptable given his 6'6\", 317 lb frame. Latches and controls with strong hands. An anchor RT at the next level.",
@@ -786,7 +786,7 @@
     "name": "Keldric Faulk",
     "pos": "EDGE",
     "school": "Auburn",
-    "grade": 90,
+    "grade": 91,
     "height": "6-5",
     "weight": 265,
     "bio": "Faulk is a long, versatile edge defender with ideal size and frame for the NFL. He skipped the 40-yard dash at the combine but posted a 35\" vertical and 9'9\" broad jump in athletic testing and impressed in on-field drills. His length, energy and character have made him a consensus top-12 prospect.",
@@ -873,7 +873,7 @@
     "name": "Caleb Lomu",
     "pos": "OT",
     "school": "Utah",
-    "grade": 88,
+    "grade": 89,
     "height": "6-6",
     "weight": 305,
     "bio": "Lomu has an ideal frame with room to add weight. Stays square, reworks hands well, excellent awareness vs stunts.",
@@ -1076,7 +1076,7 @@
     "name": "Peter Woods",
     "pos": "DT",
     "school": "Clemson",
-    "grade": 88,
+    "grade": 90,
     "height": "6-2",
     "weight": 300,
     "bio": "Woods has fabulous quickness and violent hands. Holds POA with leverage and lower-body strength. Lateral range outside the tackle box. A consensus first-round interior disruptor.",
@@ -2255,6 +2255,66 @@
       "vert": 36,
       "broad": 121,
       "cone": 7.02,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Treydan Stukes",
+    "pos": "DB",
+    "school": "Arizona",
+    "grade": 89,
+    "height": "6-2",
+    "weight": 195,
+    "bio": "Stukes is the ultimate chess piece — plays slot CB, boundary CB and free safety. Jeremiah has him going #29 overall to KC with a Trent McDuffie comp. Ran 4.33 at combine with a 38\" vert and 130\" broad. 7 career INTs. Some teams love him; he has been very impressive in pre-draft interviews.",
+    "strengths": [
+      "Official 4.33 forty — elite speed",
+      "Versatile — slot/boundary/free safety",
+      "Ball-hawking instincts — 7 career INTs",
+      "High football IQ and character"
+    ],
+    "weaknesses": [
+      "Older prospect — 24 years old",
+      "2024 ACL tear in medical history",
+      "Struggles vs twitchy WRs in press-man",
+      "Takes poor pursuit angles in run support"
+    ],
+    "combine": {
+      "forty": 4.33,
+      "bench": null,
+      "vert": 38,
+      "broad": 130,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Chris Johnson",
+    "pos": "CB",
+    "school": "San Diego State",
+    "grade": 80,
+    "height": "6-0",
+    "weight": 193,
+    "bio": "Johnson is a hyperaware coverage specialist with instinctive eyes and fluid movement skills. Elite 2025 production: 92.4 PFF coverage grade, 16.1 passer rating allowed when targeted, 4 INTs (2 returned for TDs), 5 PBUs. Jeremiah projects him to the Patriots at #31.",
+    "strengths": [
+      "Elite 2025 ball production — 4 INTs, 2 pick-6s",
+      "92.4 PFF coverage grade",
+      "Instinctive and hyperaware",
+      "Versatile — can line up at multiple spots"
+    ],
+    "weaknesses": [
+      "Group of 5 level of competition",
+      "Run defense grade below average",
+      "Primarily a coverage specialist",
+      "Still adjusting to NFL-caliber receivers"
+    ],
+    "combine": {
+      "forty": 4.48,
+      "bench": null,
+      "vert": 37,
+      "broad": 123,
+      "cone": null,
       "shuttle": null,
       "_status": "official"
     }
