@@ -3,7 +3,7 @@
     "name": "Fernando Mendoza",
     "pos": "QB",
     "school": "Indiana",
-    "grade": 97,
+    "grade": 99,
     "height": "6-5",
     "weight": 225,
     "bio": "Mendoza is a very accurate thrower with excellent size, toughness and athleticism. He operates well out of shotgun and leans heavily on the RPO game with fast hands and good decisions. His size, arm talent and competitive nature draw comparisons to Matt Ryan.",
@@ -19,13 +19,13 @@
       "Needs to improve anticipation on NFL throws"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
       "bench": null,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
@@ -79,7 +79,7 @@
     "combine": {
       "forty": 4.5,
       "bench": null,
-      "vert": null,
+      "vert": 35,
       "broad": 129,
       "cone": null,
       "shuttle": null,
@@ -93,9 +93,9 @@
     "grade": 99,
     "height": "6-4",
     "weight": 243,
-    "bio": "Reese is a fluid and explosive athlete Ohio State used as a chess piece. His 4.47 forty at the 2026 Combine featured the 6th best 10-yard split (1.58) all-time among edge rushers, confirming elite first-step explosion. He projects as a top-5 pass rusher with elite speed, bend and the ability to overpower blockers.",
+    "bio": "Reese is a fluid and explosive athlete Ohio State used as a chess piece. His 4.46 forty at the 2026 Combine featured the 6th best 10-yard split (1.58) all-time among edge rushers, confirming elite first-step explosion. He projects as a top-5 pass rusher with elite speed, bend and the ability to overpower blockers.",
     "strengths": [
-      "Official 4.47 forty — 6th best 10-yd split all-time for EDGE",
+      "Official 4.46 forty — 6th best 10-yd split all-time for EDGE",
       "Versatile — plays multiple positions",
       "Matches and mirrors TEs/RBs in coverage",
       "Elite chase speed from the back side"
@@ -106,7 +106,7 @@
       "Still learning consistent leverage"
     ],
     "combine": {
-      "forty": 4.47,
+      "forty": 4.46,
       "bench": null,
       "vert": null,
       "broad": null,
@@ -164,23 +164,23 @@
       "Not a dynamic athlete in space"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
       "bench": null,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
     "name": "Carnell Tate",
     "pos": "WR",
     "school": "Ohio State",
-    "grade": 86,
+    "grade": 92,
     "height": "6-2",
     "weight": 195,
-    "bio": "Tate is a tall, long wideout with outstanding tape but his 4.54 forty at the 2026 Combine was a significant disappointment. Bills GM Brandon Beane said \"He's pretty slow.\" He also skipped positional drills. His pro day will be crucial. Strong hands and beautiful deep-ball tracking remain elite.",
+    "bio": "Tate is a tall, long wideout with outstanding tape but his 4.53 forty at the 2026 Combine was a significant disappointment. Bills GM Brandon Beane said \"He's pretty slow.\" He also skipped positional drills. His pro day will be crucial. Strong hands and beautiful deep-ball tracking remain elite.",
     "strengths": [
       "Excellent vertical threat who tracks deep balls",
       "Strong hands and reliable in traffic",
@@ -188,12 +188,12 @@
       "Extra gear when ball is in the air"
     ],
     "weaknesses": [
-      "4.54 forty raised serious speed questions — stock down",
+      "4.53 forty raised serious speed questions — stock down",
       "Skipped positional drills at combine (pro day critical)",
       "Not exceptionally dynamic after catch"
     ],
     "combine": {
-      "forty": 4.54,
+      "forty": 4.53,
       "bench": null,
       "vert": null,
       "broad": null,
@@ -206,7 +206,7 @@
     "name": "Mansoor Delane",
     "pos": "CB",
     "school": "LSU",
-    "grade": 93,
+    "grade": 95,
     "height": "6-1",
     "weight": 190,
     "bio": "Delane is one of the most consistent players in the class. Extremely loose and fluid in coverage with the tools to match up with every style of receiver.",
@@ -222,20 +222,20 @@
       "Can be slow reacting to double moves"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
       "bench": null,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
     "name": "Caleb Downs",
     "pos": "S",
     "school": "Ohio State",
-    "grade": 94,
+    "grade": 96,
     "height": "6-0",
     "weight": 205,
     "bio": "Downs is a versatile safety with outstanding instincts. Excels against the run, dependable tackler, handles communication. Coaches rave about his intelligence and leadership.",
@@ -251,20 +251,20 @@
       "Doesn't have true center-field range"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
       "bench": null,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
     "name": "Makai Lemon",
     "pos": "WR",
     "school": "USC",
-    "grade": 92,
+    "grade": 94,
     "height": "5-11",
     "weight": 195,
     "bio": "Lemon is a wideout with a running back's body and linebacker's temperament. Wins with quickness, understands tempo, ultra-competitive after the catch. Amon-Ra St. Brown comparisons are warranted.",
@@ -280,20 +280,20 @@
       "Could struggle vs elite press"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
       "bench": null,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
     "name": "Olaivavega Ioane",
     "pos": "IOL",
     "school": "Penn State",
-    "grade": 92,
+    "grade": 93,
     "height": "6-3",
     "weight": 315,
     "bio": "Ioane was a dominant left guard with a thick build and outstanding strength. In the run game he latches, runs his feet and finishes. Tremendous upper torque.",
@@ -307,7 +307,16 @@
       "Occasionally loses against speed",
       "Limited to guard — no tackle versatility",
       "Needs to improve lateral mobility"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": 31.5,
+      "broad": 104,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Francis Mauigoa",
@@ -327,13 +336,22 @@
       "Average foot quickness out of stance",
       "Struggles redirecting at second level",
       "Needs refinement vs speed rushers"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Jermod McCoy",
     "pos": "CB",
     "school": "Tennessee",
-    "grade": 91,
+    "grade": 94,
     "height": "6-0",
     "weight": 188,
     "bio": "McCoy had an outstanding 2024 season but missed 2025 with an ACL tear. At his best in press coverage with elite ball skills and ability to elevate.",
@@ -349,37 +367,8 @@
       "Struggled vs Jeremiah Smith in playoff game"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
-      "bench": null,
-      "vert": null,
-      "broad": null,
-      "cone": null,
-      "shuttle": null
-    }
-  },
-  {
-    "name": "Spencer Fano",
-    "pos": "OT",
-    "school": "Utah",
-    "grade": 93,
-    "height": "6-5",
-    "weight": 315,
-    "bio": "Fano measured at 6'6\", 302 lbs at the 2026 Combine with a 5.05 forty. Excellent size, strength and quickness. Easily covers up speed rushers and stalls bull rushers with core strength. Outstanding play temperament and consistently regarded as a top OT prospect.",
-    "strengths": [
-      "Quick to cover up speed rushers",
-      "Excellent core strength and knee bend",
-      "Explosive run blocker who latches and dumps",
-      "Quick to climb and wall off LBs"
-    ],
-    "weaknesses": [
-      "5.05 forty — average lateral quickness for OT at his size",
-      "Occasionally oversets vs inside counters",
-      "Still developing as a pass protector"
-    ],
-    "combine": {
-      "forty": 5.05,
-      "bench": null,
+      "bench": 14,
       "vert": null,
       "broad": null,
       "cone": null,
@@ -388,10 +377,39 @@
     }
   },
   {
+    "name": "Spencer Fano",
+    "pos": "OT",
+    "school": "Utah",
+    "grade": 94,
+    "height": "6-5",
+    "weight": 315,
+    "bio": "Fano measured at 6'6\", 302 lbs at the 2026 Combine with a 4.91 forty. Excellent size, strength and quickness. Easily covers up speed rushers and stalls bull rushers with core strength. Outstanding play temperament and consistently regarded as a top OT prospect.",
+    "strengths": [
+      "Quick to cover up speed rushers",
+      "Excellent core strength and knee bend",
+      "Explosive run blocker who latches and dumps",
+      "Quick to climb and wall off LBs"
+    ],
+    "weaknesses": [
+      "4.91 forty — average lateral quickness for OT at his size",
+      "Occasionally oversets vs inside counters",
+      "Still developing as a pass protector"
+    ],
+    "combine": {
+      "forty": 4.91,
+      "bench": null,
+      "vert": 32,
+      "broad": 111,
+      "cone": 7.34,
+      "shuttle": 4.67,
+      "_status": "official"
+    }
+  },
+  {
     "name": "Emmanuel McNeil-Warren",
     "pos": "S",
     "school": "Toledo",
-    "grade": 85,
+    "grade": 89,
     "height": "6-2",
     "weight": 210,
     "bio": "McNeil-Warren is a tall safety with fantastic production. At the 2026 Combine he ran a 4.52 forty with a 35.5\" vertical and inconsistent drills — his athletic profile didn't stand out among an elite safety class. Stock down. His small-school tape still flashes Pro Bowl potential.",
@@ -437,7 +455,7 @@
     ],
     "combine": {
       "forty": 4.39,
-      "bench": null,
+      "bench": 26,
       "vert": 43.5,
       "broad": 133,
       "cone": null,
@@ -449,7 +467,7 @@
     "name": "Jordyn Tyson",
     "pos": "WR",
     "school": "Arizona State",
-    "grade": 90,
+    "grade": 94,
     "height": "6-1",
     "weight": 195,
     "bio": "Tyson is an explosive receiver with fluid movement and creative route-running. Tracks deep balls with ease and can hover waiting for the ball.",
@@ -465,20 +483,20 @@
       "Inconsistent against physical press"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
-      "bench": null,
+      "bench": 26,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
     "name": "Denzel Boston",
     "pos": "WR",
     "school": "Washington",
-    "grade": 89,
+    "grade": 86,
     "height": "6-3",
     "weight": 210,
     "bio": "Boston is a big-framed wideout with exceptional ball skills. Huge catch radius, plays above the rim in the red zone. Courtland Sutton comparisons.",
@@ -492,13 +510,22 @@
       "Lacks elite separation speed",
       "Not a dynamic route runner underneath",
       "Relies more on physicality than finesse"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": 35,
+      "broad": null,
+      "cone": null,
+      "shuttle": 4.28,
+      "_status": "official"
+    }
   },
   {
     "name": "Omar Cooper Jr.",
     "pos": "WR",
     "school": "Indiana",
-    "grade": 93,
+    "grade": 92,
     "height": "6-1",
     "weight": 200,
     "bio": "Cooper ran a 4.42 forty at the 2026 Combine and earned a bump into Daniel Jeremiah's top-20 (No. 19). Strong, reliable and fearless over the middle — his game-winner vs Penn State exemplifies his competitive DNA. Fernando Mendoza's top target at Indiana.",
@@ -516,7 +543,7 @@
     "combine": {
       "forty": 4.42,
       "bench": null,
-      "vert": null,
+      "vert": 37,
       "broad": null,
       "cone": null,
       "shuttle": null,
@@ -541,13 +568,22 @@
       "Lacks elite burst and speed",
       "Can't consistently win with speed",
       "Needs wider pass-rush repertoire"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Cashius Howell",
     "pos": "EDGE",
     "school": "Texas A&M",
-    "grade": 89,
+    "grade": 87,
     "height": "6-2",
     "weight": 248,
     "bio": "Howell impressed at the 2026 Combine with a 4.59 forty despite his compact frame — validators of his elite twitch. Undersized but with outstanding tenacity and production. Wins with speed, power or instinctive counters. Plays with violence and awareness.",
@@ -565,8 +601,8 @@
     "combine": {
       "forty": 4.59,
       "bench": null,
-      "vert": null,
-      "broad": null,
+      "vert": 32.5,
+      "broad": 115,
       "cone": null,
       "shuttle": null,
       "_status": "official"
@@ -590,7 +626,16 @@
       "Tightness shows up in man coverage",
       "Doesn't have elite sideline-to-sideline range",
       "Needs to improve shedding OL blocks"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Dillon Thieneman",
@@ -613,7 +658,7 @@
     ],
     "combine": {
       "forty": 4.35,
-      "bench": null,
+      "bench": 18,
       "vert": 41,
       "broad": 125,
       "cone": null,
@@ -625,10 +670,10 @@
     "name": "Blake Miller",
     "pos": "OT",
     "school": "Clemson",
-    "grade": 86,
+    "grade": 89,
     "height": "6-6",
     "weight": 318,
-    "bio": "Miller is an iron man — 54 starts at RT. High school wrestler with ideal size, length and strength. His 5.18 forty at the 2026 Combine was below average for tackles but acceptable given his 6'6\", 317 lb frame. Latches and controls with strong hands. An anchor RT at the next level.",
+    "bio": "Miller is an iron man — 54 starts at RT. High school wrestler with ideal size, length and strength. His 5.04 forty at the 2026 Combine was below average for tackles but acceptable given his 6'6\", 317 lb frame. Latches and controls with strong hands. An anchor RT at the next level.",
     "strengths": [
       "Ideal size and length for NFL RT",
       "Strong hands that latch and control",
@@ -636,15 +681,15 @@
       "Outstanding experience — 54 starts"
     ],
     "weaknesses": [
-      "5.18 forty — limited athleticism for LT consideration",
+      "5.04 forty — limited athleticism for LT consideration",
       "Struggles to redirect in space",
       "Limited left tackle upside"
     ],
     "combine": {
-      "forty": 5.18,
+      "forty": 5.04,
       "bench": null,
-      "vert": null,
-      "broad": null,
+      "vert": 32,
+      "broad": 113,
       "cone": null,
       "shuttle": null,
       "_status": "official"
@@ -654,7 +699,7 @@
     "name": "Monroe Freeling",
     "pos": "OT",
     "school": "Georgia",
-    "grade": 87,
+    "grade": 93,
     "height": "6-6",
     "weight": 310,
     "bio": "Freeling has ideal size, bend and agility for LT. Quick out of stance, bends easily and redirects vs counters. Excels on combo blocks. Playing his best late in the year.",
@@ -668,7 +713,16 @@
       "Needs to add core strength",
       "Gets tugged when defenders reach his chest",
       "Battled injuries in 2025"
-    ]
+    ],
+    "combine": {
+      "forty": 4.93,
+      "bench": null,
+      "vert": 33.5,
+      "broad": 115,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Colton Hood",
@@ -688,13 +742,22 @@
       "Average size may limit outside matchups",
       "Gets grabby when ball is in the air",
       "Limited ball production"
-    ]
+    ],
+    "combine": {
+      "forty": 4.44,
+      "bench": null,
+      "vert": 40.5,
+      "broad": 125,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Lee Hunter",
     "pos": "DT",
     "school": "Texas Tech",
-    "grade": 86,
+    "grade": 82,
     "height": "6-2",
     "weight": 315,
     "bio": "Hunter is a thick, wide-bodied DT dominant against the run. Can bend and leverage single blocks then chuck them aside. Dominant in CFP game vs Oregon.",
@@ -708,7 +771,16 @@
       "Raw as a pass rusher — too upright",
       "Needs to improve get-off on passing downs",
       "Limited pass-rush plan"
-    ]
+    ],
+    "combine": {
+      "forty": 5.18,
+      "bench": null,
+      "vert": 21.5,
+      "broad": 100,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Keldric Faulk",
@@ -743,7 +815,7 @@
     "name": "Kadyn Proctor",
     "pos": "OT",
     "school": "Alabama",
-    "grade": 86,
+    "grade": 92,
     "height": "6-7",
     "weight": 335,
     "bio": "Proctor is enormous with excellent feet for his size. Can uncoil hips and displace defenders. Highest upside of any blocker in the class.",
@@ -757,7 +829,16 @@
       "Needs to manage weight",
       "Occasionally reacts late off snap",
       "Can be beaten by quick inside moves"
-    ]
+    ],
+    "combine": {
+      "forty": 5.21,
+      "bench": null,
+      "vert": 32.5,
+      "broad": 109,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Avieon Terrell",
@@ -780,7 +861,7 @@
     ],
     "combine": {
       "forty": null,
-      "bench": null,
+      "bench": 17,
       "vert": 34,
       "broad": 123,
       "cone": null,
@@ -792,7 +873,7 @@
     "name": "Caleb Lomu",
     "pos": "OT",
     "school": "Utah",
-    "grade": 85,
+    "grade": 88,
     "height": "6-6",
     "weight": 305,
     "bio": "Lomu has an ideal frame with room to add weight. Stays square, reworks hands well, excellent awareness vs stunts.",
@@ -806,7 +887,16 @@
       "Lacks knock-back power in run game",
       "Needs to add significant core strength",
       "Plays a bit upright in pass pro"
-    ]
+    ],
+    "combine": {
+      "forty": 4.99,
+      "bench": null,
+      "vert": 32.5,
+      "broad": 113,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "T.J. Parker",
@@ -841,7 +931,7 @@
     "name": "KC Concepcion",
     "pos": "WR",
     "school": "Texas A&M",
-    "grade": 84,
+    "grade": 86,
     "height": "6-0",
     "weight": 185,
     "bio": "Concepcion has elite burst and speed that jumps off the screen. Dynamic with ball in hands, immediate catch-to-run transition.",
@@ -857,20 +947,20 @@
       "Needs to be more dependable catcher"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
       "bench": null,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
     "name": "Max Iheanachor",
     "pos": "OT",
     "school": "Arizona State",
-    "grade": 84,
+    "grade": 89,
     "height": "6-6",
     "weight": 320,
     "bio": "Iheanachor is raw but talented. Moved from Nigeria at 13, didn't play football until JuCo. Tape full of clues he could be one of the best OL in this class.",
@@ -884,7 +974,16 @@
       "Very raw technique — late to punch",
       "Lacks polish in pass protection",
       "Limited football experience"
-    ]
+    ],
+    "combine": {
+      "forty": 4.91,
+      "bench": null,
+      "vert": 30.5,
+      "broad": 115,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Kayden McDonald",
@@ -904,7 +1003,16 @@
       "Not a lateral chase player",
       "Lacks twitch as a pass rusher",
       "Limited ceiling — more role player"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Caleb Banks",
@@ -939,7 +1047,7 @@
     "name": "Brandon Cisse",
     "pos": "CB",
     "school": "South Carolina",
-    "grade": 83,
+    "grade": 85,
     "height": "6-1",
     "weight": 185,
     "bio": "Cisse is fast and twitchy with vision to close space and make plays. Loose and fluid, will likely rise through the spring.",
@@ -953,7 +1061,16 @@
       "Not physical in press",
       "Lacks run support aggression",
       "Focus issues lead to inconsistency"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": 41,
+      "broad": 131,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Peter Woods",
@@ -973,7 +1090,16 @@
       "Not consistent game to game",
       "Gets wiped on down blocks",
       "Lack of length exposes his chest"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "R Mason Thomas",
@@ -993,13 +1119,22 @@
       "Lacks ideal height and length",
       "Stiff when dropping into coverage",
       "Doesn't fit the traditional prototype"
-    ]
+    ],
+    "combine": {
+      "forty": 4.67,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Ty Simpson",
     "pos": "QB",
     "school": "Alabama",
-    "grade": 82,
+    "grade": 85,
     "height": "6-2",
     "weight": 210,
     "bio": "Simpson has sound mechanics, touch and accuracy. Quick feet, compact delivery, enough arm. Good athlete on designed boots. Play tailed off late with injuries.",
@@ -1014,7 +1149,16 @@
       "Play tailed off late in 2025",
       "Only 15 career starts",
       "Gets sped up when pocket collapses"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Christen Miller",
@@ -1034,13 +1178,22 @@
       "Gets segmented — stops feet throwing hands",
       "Can get turned at POA",
       "More disruptive than productive"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Anthony Hill Jr.",
     "pos": "LB",
     "school": "Texas",
-    "grade": 82,
+    "grade": 84,
     "height": "6-2",
     "weight": 240,
     "bio": "Hill is a fluid mover with outstanding size and speed. Instincts and speed put him in position to make plays. Outstanding closing speed from the back side.",
@@ -1054,13 +1207,22 @@
       "Isn't physical taking on blockers",
       "Not an aggressive player",
       "Relies too much on athleticism"
-    ]
+    ],
+    "combine": {
+      "forty": 4.51,
+      "bench": 21,
+      "vert": 37,
+      "broad": 125,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Jadarian Price",
     "pos": "RB",
     "school": "Notre Dame",
-    "grade": 81,
+    "grade": 83,
     "height": "5-10",
     "weight": 210,
     "bio": "Price ran a 4.49 forty with a 35\" vertical and 10'4\" broad jump at the 2026 Combine. Solid but not elite athletic profile. A compact RB with terrific vision and supreme contact balance. Dynamic kick returner with 2 TDs in 2025.",
@@ -1077,7 +1239,7 @@
     ],
     "combine": {
       "forty": 4.49,
-      "bench": null,
+      "bench": 21,
       "vert": 35,
       "broad": 124,
       "cone": null,
@@ -1132,7 +1294,16 @@
       "Older prospect at 24",
       "Fly-by missed tackles",
       "Limited man coverage experience"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Antonio Williams",
@@ -1152,13 +1323,22 @@
       "Undersized at 5-10, 185",
       "Limited to the slot",
       "May struggle vs physical press"
-    ]
+    ],
+    "combine": {
+      "forty": 4.41,
+      "bench": 10,
+      "vert": 39.5,
+      "broad": 124,
+      "cone": 7,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Zion Young",
     "pos": "EDGE",
     "school": "Missouri",
-    "grade": 80,
+    "grade": 83,
     "height": "6-4",
     "weight": 265,
     "bio": "Young is big and powerful with heavy hands to jolt blockers. Destroys TEs assigned to block him. Firm at POA with tremendous effort. Strong Senior Bowl.",
@@ -1172,13 +1352,22 @@
       "Herky-jerky mover, lacks fluidity",
       "Not dynamic off the edge",
       "No elite get-off or speed rush"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Jake Golday",
     "pos": "LB",
     "school": "Cincinnati",
-    "grade": 80,
+    "grade": 82,
     "height": "6-3",
     "weight": 230,
     "bio": "Golday is tall, lean and fast. Lined up in the box, on the edge and over the slot. Game predicated on speed to beat blockers to spots.",
@@ -1192,7 +1381,16 @@
       "Lacks ideal physicality vs blockers",
       "Struggles to escape once engaged",
       "Lean frame may limit durability"
-    ]
+    ],
+    "combine": {
+      "forty": 4.62,
+      "bench": null,
+      "vert": 39,
+      "broad": 125,
+      "cone": 7.02,
+      "shuttle": 4.34,
+      "_status": "official"
+    }
   },
   {
     "name": "Deion Burks",
@@ -1215,7 +1413,7 @@
     ],
     "combine": {
       "forty": 4.3,
-      "bench": null,
+      "bench": 26,
       "vert": 42.5,
       "broad": 131,
       "cone": null,
@@ -1244,9 +1442,9 @@
     ],
     "combine": {
       "forty": 4.35,
-      "bench": null,
+      "bench": 20,
       "vert": 38,
-      "broad": null,
+      "broad": 125,
       "cone": null,
       "shuttle": null,
       "_status": "official"
@@ -1271,7 +1469,16 @@
       "Processing too slow vs pressure",
       "Inconsistent intermediate accuracy",
       "Still developing as full-field reader"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Chris Bell",
@@ -1292,13 +1499,22 @@
       "Lacks top-end speed to threaten deep consistently",
       "Route tree needs more refinement",
       "Can be re-routed by physical press"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "LT Overton",
     "pos": "DT",
     "school": "Alabama",
-    "grade": 85,
+    "grade": 88,
     "height": "6-5",
     "weight": 278,
     "bio": "Overton is a massive, versatile defensive lineman with rare athleticism for his size. Plays inside and outside with disruptive potential. A former five-star recruit whose tools are finally translating to production.",
@@ -1313,13 +1529,22 @@
       "Still learning to use his tools consistently",
       "Can get washed in the run game",
       "Production hasn't matched his talent"
-    ]
+    ],
+    "combine": {
+      "forty": 4.87,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Emmanuel Pregnon",
     "pos": "IOL",
     "school": "Oregon",
-    "grade": 84,
+    "grade": 86,
     "height": "6-5",
     "weight": 318,
     "bio": "Pregnon is a massive, physical guard who moves well for his size. Nasty temperament in the run game with strong hands to latch and drive. Anchored Oregon's dominant offensive line.",
@@ -1334,13 +1559,22 @@
       "Occasionally overextends in pass pro",
       "Limited tackle versatility",
       "Needs to improve hand placement"
-    ]
+    ],
+    "combine": {
+      "forty": 5.21,
+      "bench": null,
+      "vert": 35,
+      "broad": 111,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "D'Angelo Ponds",
     "pos": "CB",
     "school": "Indiana",
-    "grade": 84,
+    "grade": 88,
     "height": "5-9",
     "weight": 170,
     "bio": "Ponds is a feisty, competitive corner with outstanding ball skills despite his smaller frame. Quick feet and fluid hips allow him to mirror receivers. Was a key piece in Indiana's breakout 2025 season.",
@@ -1355,13 +1589,22 @@
       "Will struggle vs bigger outside WRs",
       "Lacks ideal length for press",
       "Run support can be an issue"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": 43.5,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Kamari Ramsey",
     "pos": "S",
     "school": "USC",
-    "grade": 83,
+    "grade": 81,
     "height": "6-0",
     "weight": 205,
     "bio": "Ramsey is a versatile, hard-hitting safety with range and instincts. Physical striker against the run who also covers ground in the deep half. Emerged as one of the top safeties in the class.",
@@ -1376,7 +1619,16 @@
       "Occasional missed tackles in space",
       "Needs to improve ball production",
       "Gets caught peeking in the backfield"
-    ]
+    ],
+    "combine": {
+      "forty": 4.47,
+      "bench": 16,
+      "vert": 36,
+      "broad": 120,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Gabe Jacas",
@@ -1399,20 +1651,20 @@
       "Limited power-rush repertoire"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
       "bench": 30,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
     "name": "Gennings Dunker",
     "pos": "OT",
     "school": "Iowa",
-    "grade": 82,
+    "grade": 83,
     "height": "6-5",
     "weight": 315,
     "bio": "Dunker is a mauling, physical tackle who dominates in the run game. Iowa product with outstanding technique and strength. Projects as a starting right tackle with guard versatility.",
@@ -1427,7 +1679,16 @@
       "Can struggle vs speed rushers",
       "Limited lateral mobility",
       "Pass protection ceiling is average"
-    ]
+    ],
+    "combine": {
+      "forty": 5.18,
+      "bench": null,
+      "vert": 32.5,
+      "broad": 108,
+      "cone": null,
+      "shuttle": 4.63,
+      "_status": "official"
+    }
   },
   {
     "name": "Isaiah World",
@@ -1448,13 +1709,22 @@
       "Inconsistent anchor in pass pro",
       "Gets caught lunging at times",
       "Needs to add functional strength"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Germie Bernard",
     "pos": "WR",
     "school": "Alabama",
-    "grade": 81,
+    "grade": 79,
     "height": "6-1",
     "weight": 204,
     "bio": "Bernard is a dynamic, versatile receiver who can line up anywhere. Explosive after the catch with excellent speed. Emerged as Alabama's go-to target in 2025 with reliable production.",
@@ -1469,13 +1739,22 @@
       "Undersized for outside role",
       "Route tree still developing",
       "Can disappear in big moments"
-    ]
+    ],
+    "combine": {
+      "forty": 4.48,
+      "bench": null,
+      "vert": 32.5,
+      "broad": 125,
+      "cone": 6.71,
+      "shuttle": 4.31,
+      "_status": "official"
+    }
   },
   {
     "name": "Chris Brazzell II",
     "pos": "WR",
     "school": "Tennessee",
-    "grade": 80,
+    "grade": 82,
     "height": "6-5",
     "weight": 200,
     "bio": "Brazzell is a massive outside receiver in the Mike Evans mold. Uses his size and length to dominate at the catch point. Red zone nightmare for defenders with his ability to high-point the football.",
@@ -1490,7 +1769,16 @@
       "Lacks elite speed for his size",
       "Inconsistent route runner",
       "Can be jammed off the line"
-    ]
+    ],
+    "combine": {
+      "forty": 4.37,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Elijah Sarratt",
@@ -1511,7 +1799,16 @@
       "Average route-running technique",
       "Not dynamic with ball in hands",
       "Limited YAC ability"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Max Klare",
@@ -1532,7 +1829,16 @@
       "Not a YAC threat",
       "Inconsistent hands under pressure",
       "Limited route tree beyond verticals"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Harold Perkins Jr.",
@@ -1553,7 +1859,16 @@
       "Hasn't stayed healthy for full season",
       "Undersized at POA",
       "Still learning to read and react"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Keith Abney II",
@@ -1574,7 +1889,16 @@
       "Can be beat by double moves",
       "Not a true shutdown corner",
       "Tightness shows in transition"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": 15,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Garrett Nussmeier",
@@ -1595,7 +1919,16 @@
       "Inconsistent accuracy",
       "Struggles under pressure",
       "Pocket presence needs work"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Carson Beck",
@@ -1616,7 +1949,16 @@
       "Durability concerns",
       "Decision-making under pressure",
       "Needs to prove he can lead consistently"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Mike Washington Jr.",
@@ -1651,7 +1993,7 @@
     "name": "Romello Height",
     "pos": "EDGE",
     "school": "Texas Tech",
-    "grade": 79,
+    "grade": 81,
     "height": "6-3",
     "weight": 240,
     "bio": "Height is an explosive, high-motor edge rusher with dynamic pass-rush ability. Pairs well with teammate David Bailey in Texas Tech's front. Can be a situational impact player on day one.",
@@ -1666,13 +2008,22 @@
       "Needs to add significant mass",
       "Struggles holding POA vs run",
       "One-dimensional speed rusher currently"
-    ]
+    ],
+    "combine": {
+      "forty": 4.64,
+      "bench": null,
+      "vert": 39,
+      "broad": 125,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "A.J. Haulcy",
     "pos": "S",
     "school": "LSU",
-    "grade": 78,
+    "grade": 76,
     "height": "6-0",
     "weight": 222,
     "bio": "Haulcy is a physical, hard-hitting safety with outstanding striking ability. Fills the alley aggressively and makes plays on the ball. A tone-setter in LSU's secondary.",
@@ -1687,7 +2038,16 @@
       "Can be a liability in man coverage",
       "Takes poor angles in space",
       "Overly aggressive — freelances too much"
-    ]
+    ],
+    "combine": {
+      "forty": 4.52,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Eli Stowers",
@@ -1726,7 +2086,7 @@
     "grade": 76,
     "height": "5-10",
     "weight": 215,
-    "bio": "Coleman is a compact, powerful runner who transferred to Washington and immediately produced. Runs with violence and pad level. Three-down potential with toughness in pass protection.",
+    "bio": "Coleman is a compact, powerful runner who transferred to Washington and immediately produced. He declined to do athletic testing at the 2026 Combine — pro day will be critical. Runs with violence and pad level. Three-down potential with toughness in pass protection.",
     "strengths": [
       "Runs with power and low pad level",
       "Excellent contact balance",
@@ -1735,18 +2095,18 @@
     ],
     "weaknesses": [
       "Lacks elite breakaway speed",
-      "Not a dynamic receiver",
+      "Did not test athletically at combine (pro day key)",
       "Limited big-play ability",
       "Older prospect with mileage"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
-      "bench": null,
+      "bench": 22,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
@@ -1756,7 +2116,7 @@
     "grade": 76,
     "height": "6-0",
     "weight": 225,
-    "bio": "Singleton is a big, physical back with outstanding speed for his size. Former five-star recruit who showed flashes of dominance. One-cut downhill runner with home-run potential.",
+    "bio": "Singleton is a big, physical back with outstanding speed for his size. Former five-star recruit who showed flashes of dominance. He fractured the 5th metatarsal in his right foot at the Senior Bowl and was ruled out of all on-field work at the 2026 Combine. One-cut downhill runner with home-run potential once healthy.",
     "strengths": [
       "Outstanding speed for his size",
       "One-cut, downhill running style",
@@ -1764,19 +2124,19 @@
       "Physical and hard to bring down"
     ],
     "weaknesses": [
+      "Fractured foot — missed Senior Bowl and 2026 Combine on-field work",
       "Inconsistent vision and patience",
-      "Didn't always produce to his talent level",
       "Limited receiving skills",
       "Fumble issues in college"
     ],
     "combine": {
-      "_status": "official",
       "forty": null,
       "bench": null,
       "vert": null,
       "broad": null,
       "cone": null,
-      "shuttle": null
+      "shuttle": null,
+      "_status": "official"
     }
   },
   {
@@ -1798,7 +2158,16 @@
       "Stiff in space and coverage",
       "Limited pass-rush ceiling",
       "Not a dynamic athlete"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Josiah Trotter",
@@ -1819,13 +2188,22 @@
       "Not a sideline-to-sideline athlete",
       "Struggles vs athletic TEs",
       "Needs to improve pass drops"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": 27,
+      "vert": null,
+      "broad": null,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
   },
   {
     "name": "Caleb Tiernan",
     "pos": "OT",
     "school": "Northwestern",
-    "grade": 77,
+    "grade": 80,
     "height": "6-7",
     "weight": 325,
     "bio": "Tiernan has massive size and length. Athletic for his frame with the ability to play right tackle or kick inside to guard. Showed improvement throughout 2025.",
@@ -1840,6 +2218,45 @@
       "Can be beaten by inside moves",
       "Occasionally oversets in pass pro",
       "Needs more consistency"
-    ]
+    ],
+    "combine": {
+      "forty": null,
+      "bench": null,
+      "vert": 35.5,
+      "broad": 111,
+      "cone": null,
+      "shuttle": null,
+      "_status": "official"
+    }
+  },
+  {
+    "name": "Malachi Lawrence",
+    "pos": "EDGE",
+    "school": "UCF",
+    "grade": 83,
+    "height": "6-4",
+    "weight": 258,
+    "bio": "Lawrence is a twitchy, bendy EDGE from UCF who emerged late in the process. B/R mocks him #32 to Seattle, Brugler has him #26. Wins with elite first step and flexible hips around the corner. Still developing but high-ceiling pick.",
+    "strengths": [
+      "Elite bend and ankle flex around the arc",
+      "Twitchy first step",
+      "Good motor and pursuit",
+      "Productive vs Power-5 competition"
+    ],
+    "weaknesses": [
+      "Needs to add play strength",
+      "Can be overpowered by bigger tackles",
+      "Group of 5 level of competition",
+      "Run defense needs work"
+    ],
+    "combine": {
+      "forty": 4.56,
+      "bench": 18,
+      "vert": 36,
+      "broad": 121,
+      "cone": 7.02,
+      "shuttle": null,
+      "_status": "official"
+    }
   }
 ]

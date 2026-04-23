@@ -1,6 +1,6 @@
 {
   "combineScoreToGrade": 0.0904519015491229,
   "formula": "gradeAdjustment = (combineScore - 50) * 0.0905",
-  "trainedAt": "2026-03-01T19:55:14.239Z",
+  "trainedAt": "2026-04-23T19:29:27.208Z",
   "sampleSize": 12
 }

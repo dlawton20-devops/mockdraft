@@ -14,12 +14,24 @@ const DRAFT_INDUSTRY_EXPERTS = [
   {name:'Trevor Sikkema',handle:'TampaBayTre',outlet:'PFF',role:'Draft Analyst'},
   {name:'Benjamin Solak',handle:'BenjaminSolak',outlet:'ESPN',role:'Draft Analyst'},
   {name:'Kyle Crabbs',handle:'GrsAreGreener',outlet:'The 33rd Team',role:'Draft Analyst'},
+  {name:'Todd McShay',handle:'McShay13',outlet:'The McShay Report',role:'Draft Analyst'},
+  {name:'Matt Miller',handle:'nfldraftscout',outlet:'ESPN',role:'Draft Analyst'},
+  {name:'Jim Nagy',handle:'JimNagy_SB',outlet:'Senior Bowl',role:'Executive Director'},
+  {name:'Mike Renner',handle:'mikerenner_',outlet:'PFF',role:'Lead Draft Analyst'},
+  {name:'Connor Rogers',handle:'ConnorJRogers',outlet:'PFF / NBC Sports',role:'Draft Analyst'},
+  {name:'Eric Edholm',handle:'Eric_Edholm',outlet:'NFL.com',role:'Draft Analyst'},
+  {name:'Chris Trapasso',handle:'ChrisTrapasso',outlet:'CBS Sports',role:'Draft Analyst'},
+  {name:'Ryan Wilson',handle:'ryanwilsonCBS',outlet:'CBS Sports',role:'Draft Analyst'},
+  {name:'Emory Hunt',handle:'FBallGameplan',outlet:'CBS Sports / Football Gameplan',role:'Draft Analyst'},
+  {name:'Nate Tice',handle:'Nate_Tice',outlet:'Yahoo Sports',role:'NFL Analyst'},
+  {name:'Cynthia Frelund',handle:'cfrelund',outlet:'NFL Network',role:'Analytics Analyst'},
+  {name:'Charles Davis',handle:'charl3s13',outlet:'NFL Network / CBS',role:'Draft Analyst'},
 ];
 
 const TEAM_BEAT_REPORTERS = {
   LV: [
     {name:'Vincent Bonsignore',handle:'VinnyBonsignore',outlet:'Las Vegas Review-Journal'},
-    {name:'Tashan Reed',handle:'tasaborsg',outlet:'The Athletic'},
+    {name:'Tashan Reed',handle:'tashanreed',outlet:'The Athletic'},
     {name:'Paul Gutierrez',handle:'PGutierrezESPN',outlet:'ESPN'},
   ],
   NYJ: [
@@ -28,13 +40,13 @@ const TEAM_BEAT_REPORTERS = {
     {name:'Zack Rosenblatt',handle:'ZackBlatt',outlet:'The Athletic'},
   ],
   ARI: [
-    {name:'Josh Weinfuss',handle:'jaborsg',outlet:'ESPN'},
+    {name:'Josh Weinfuss',handle:'joshweinfuss',outlet:'ESPN'},
     {name:'Darren Urban',handle:'Cardschatter',outlet:'AZCardinals.com'},
     {name:'Howard Balzer',handle:'HBalzer721',outlet:'SI / Cardinals'},
   ],
   TEN: [
     {name:'Turron Davenport',handle:'TDavenport_NFL',outlet:'ESPN'},
-    {name:'Terry McCormick',handle:'teraborsg',outlet:'Titan Insider'},
+    {name:'Terry McCormick',handle:'terrymc13',outlet:'Titan Insider'},
     {name:'Paul Kuharsky',handle:'PaulKuharsky',outlet:'PaulKuharsky.com'},
   ],
   NYG: [
@@ -70,27 +82,27 @@ const TEAM_BEAT_REPORTERS = {
   MIA: [
     {name:'Marcel Louis-Jacques',handle:'Marcel_LJ',outlet:'ESPN'},
     {name:'David Furones',handle:'DavidFurones_',outlet:'South Florida Sun Sentinel'},
-    {name:'Joe Schad',handle:'schaaborsg',outlet:'Palm Beach Post'},
+    {name:'Joe Schad',handle:'schadjoe',outlet:'Palm Beach Post'},
   ],
   DAL: [
-    {name:'Todd Archer',handle:'todaborsg',outlet:'ESPN'},
+    {name:'Todd Archer',handle:'toddarcher',outlet:'ESPN'},
     {name:'Jon Machota',handle:'jonmachota',outlet:'The Athletic'},
-    {name:'Calvin Watkins',handle:'calaborsg',outlet:'Dallas Morning News'},
+    {name:'Calvin Watkins',handle:'calvinwatkins',outlet:'Dallas Morning News'},
   ],
   ATL: [
     {name:'Michael Rothstein',handle:'MikeRothstein',outlet:'ESPN'},
     {name:'Josh Kendall',handle:'JoshKendallATH',outlet:'The Athletic'},
-    {name:'Tori McElhaney',handle:'taborsg',outlet:'AtlantaFalcons.com'},
+    {name:'Tori McElhaney',handle:'tori_mcelhaney',outlet:'AtlantaFalcons.com'},
   ],
   BAL: [
-    {name:'Jamison Hensley',handle:'jaborsg',outlet:'ESPN'},
-    {name:'Jeff Zrebiec',handle:'jeffzaborsg',outlet:'The Athletic'},
+    {name:'Jamison Hensley',handle:'jamisonhensley',outlet:'ESPN'},
+    {name:'Jeff Zrebiec',handle:'jeffzrebiec',outlet:'The Athletic'},
     {name:'Jonas Shaffer',handle:'jonas_shaffer',outlet:'Baltimore Banner'},
   ],
   TB: [
     {name:'Jenna Laine',handle:'JennaLaineESPN',outlet:'ESPN'},
-    {name:'Greg Auman',handle:'gregaborsg',outlet:'Fox Sports'},
-    {name:'Rick Stroud',handle:'RABORSG',outlet:'Tampa Bay Times'},
+    {name:'Greg Auman',handle:'gregauman',outlet:'Fox Sports'},
+    {name:'Rick Stroud',handle:'NFLSTROUD',outlet:'Tampa Bay Times'},
   ],
   IND: [
     {name:'Stephen Holder',handle:'HolderStephen',outlet:'ESPN'},
@@ -99,31 +111,31 @@ const TEAM_BEAT_REPORTERS = {
   ],
   DET: [
     {name:'Eric Woodyard',handle:'E_Woodyard',outlet:'ESPN'},
-    {name:'Colton Pouncy',handle:'colaborsg',outlet:'The Athletic'},
-    {name:'Dave Birkett',handle:'daborsg',outlet:'Detroit Free Press'},
+    {name:'Colton Pouncy',handle:'colton_pouncy',outlet:'The Athletic'},
+    {name:'Dave Birkett',handle:'davebirkett',outlet:'Detroit Free Press'},
   ],
   MIN: [
-    {name:'Kevin Seifert',handle:'kevinaborsg',outlet:'ESPN'},
-    {name:'Alec Lewis',handle:'alaborsg',outlet:'The Athletic'},
+    {name:'Kevin Seifert',handle:'SeifertESPN',outlet:'ESPN'},
+    {name:'Alec Lewis',handle:'alec_lewis',outlet:'The Athletic'},
     {name:'Ben Goessling',handle:'BenGoessling',outlet:'Star Tribune'},
   ],
   CAR: [
     {name:'David Newton',handle:'DNewtonespn',outlet:'ESPN'},
     {name:'Joe Person',handle:'josephperson',outlet:'The Athletic'},
-    {name:'Sheena Quick',handle:'sheaborsg',outlet:'Fox 46'},
+    {name:'Sheena Quick',handle:'Sheena_Marie3',outlet:'Fox 46'},
   ],
   GB: [
     {name:'Rob Demovsky',handle:'RobDemovsky',outlet:'ESPN'},
-    {name:'Matt Schneidman',handle:'mattaborsg',outlet:'The Athletic'},
+    {name:'Matt Schneidman',handle:'mattschneidman',outlet:'The Athletic'},
     {name:'Ryan Wood',handle:'ByRyanWood',outlet:'USA Today'},
   ],
   PIT: [
-    {name:'Brooke Pryor',handle:'beaborsg',outlet:'ESPN'},
+    {name:'Brooke Pryor',handle:'bepryor',outlet:'ESPN'},
     {name:'Mark Kaboly',handle:'MarkKaboly',outlet:'The Athletic'},
     {name:'Ray Fittipaldo',handle:'rayfitt1',outlet:'Pittsburgh Post-Gazette'},
   ],
   LAC: [
-    {name:'Kris Rhim',handle:'kaborsg',outlet:'ESPN'},
+    {name:'Kris Rhim',handle:'krisrhim1',outlet:'ESPN'},
     {name:'Daniel Popper',handle:'danielrpopper',outlet:'The Athletic'},
     {name:'Jeff Miller',handle:'JeffMillerLAT',outlet:'LA Times'},
   ],
@@ -143,17 +155,17 @@ const TEAM_BEAT_REPORTERS = {
     {name:'Brad Biggs',handle:'BradBiggs',outlet:'Chicago Tribune'},
   ],
   BUF: [
-    {name:'Alaina Getzenberg',handle:'agaborsg',outlet:'ESPN'},
+    {name:'Alaina Getzenberg',handle:'agetzenberg',outlet:'ESPN'},
     {name:'Joe Buscaglia',handle:'JoeBuscaglia',outlet:'The Athletic'},
-    {name:'Vic Carucci',handle:'vicaborsg',outlet:'Buffalo News'},
+    {name:'Vic Carucci',handle:'viccarucci',outlet:'Buffalo News'},
   ],
   SF: [
-    {name:'Nick Wagoner',handle:'naborsg',outlet:'ESPN'},
+    {name:'Nick Wagoner',handle:'nwagoner',outlet:'ESPN'},
     {name:'David Lombardi',handle:'LombardiHimself',outlet:'The Athletic'},
     {name:'Matt Maiocco',handle:'MaioccoNBCS',outlet:'NBC Sports Bay Area'},
   ],
   HOU: [
-    {name:'DJ Bien-Aime',handle:'Djaborsg',outlet:'ESPN'},
+    {name:'DJ Bien-Aime',handle:'Djbienaime',outlet:'ESPN'},
     {name:'Aaron Reiss',handle:'aaronreiss',outlet:'The Athletic'},
     {name:'Jonathan Alexander',handle:'JAlexanderNFL',outlet:'Houston Chronicle'},
   ],
@@ -165,7 +177,7 @@ const TEAM_BEAT_REPORTERS = {
   DEN: [
     {name:'Jeff Legwold',handle:'JFLegwold',outlet:'ESPN'},
     {name:'Nick Kosmider',handle:'NickKosmider',outlet:'The Athletic'},
-    {name:'Ryan O\'Halloran',handle:'ryanaborsg',outlet:'Denver Post'},
+    {name:'Ryan O\'Halloran',handle:'ryanohalloran',outlet:'Denver Post'},
   ],
   NE: [
     {name:'Mike Reiss',handle:'MikeReiss',outlet:'ESPN'},

@@ -59,36 +59,56 @@ const POS_DRILLS={
   S:   {forty:true,bench:true,vert:true,broad:true,cone:true,shuttle:true},
 };
 
-// Prospect grade updates from combine, experts, news (apply delta to base grade)
+// Prospect grade updates from combine, pro days, expert movement, news (apply delta to base grade)
 const PROSPECT_UPDATES={
+  // ===== Post-combine updates (Feb 26 – Mar 1) =====
   'Sonny Styles':{delta:2,source:'2026 Combine — LB record 43.5" vert, 4.46 forty. Historic athlete.',date:'2026-02-26'},
   'Dillon Thieneman':{delta:3,source:'2026 Combine — 4.35 forty (4th fastest S), 41" vert, 1.52 10-yd split. Locked in 1st round.',date:'2026-02-27'},
-  'Carnell Tate':{delta:-4,source:'2026 Combine — disappointing 4.53 forty. Bills GM Beane: "He\'s pretty slow." Skipped positional drills.',date:'2026-02-28'},
   'Kenyon Sadiq':{delta:2,source:'2026 Combine — TE record 4.39 forty, 43.5" vert, 11\'1" broad. Clear TE1.',date:'2026-02-27'},
-  'Emmanuel McNeil-Warren':{delta:-3,source:'2026 Combine — 4.52 forty, inconsistent drills. Underwhelmed vs elite safety class.',date:'2026-02-27'},
   'Malachi Fields':{delta:-4,source:'2026 Combine — 4.61 forty + concentration drops in on-field drills. Stock down.',date:'2026-02-28'},
   'Omar Cooper Jr.':{delta:3,source:'2026 Combine — 4.42 forty. Daniel Jeremiah bumped to No. 19 on updated big board.',date:'2026-02-28'},
-  'Arvell Reese':{delta:2,source:'2026 Combine — 4.46 forty, 6th best 10-yd split (1.58) all-time for edge rushers.',date:'2026-02-26'},
-  'Jeremiyah Love':{delta:1,source:'2026 Combine — 4.36 forty at 214 lbs validated elite speed.',date:'2026-02-28'},
-  'David Bailey':{delta:1,source:'2026 Combine — 4.50 forty. "Performed like a bona fide top-5 pick."',date:'2026-02-26'},
   'Rueben Bain Jr.':{delta:-2,source:'2026 Combine — 30 7/8" arms (4th shortest among edge rushers since 1999) raised ceiling concerns.',date:'2026-02-26'},
   'Eli Stowers':{delta:6,source:'2026 Combine — TE records: 45.5" vertical and 11\'3" broad jump. Both all-time records for TEs.',date:'2026-02-27'},
   'Mike Washington Jr.':{delta:5,source:'2026 Combine — 4.33 forty (fastest RB) at 223 lbs. Stock up to Day 2 consideration.',date:'2026-02-28'},
   'Deion Burks':{delta:5,source:'2026 Combine — 4.30 forty, 42.5" vert, 10\'11" broad. 3rd fastest overall at combine.',date:'2026-02-28'},
   'Zachariah Branch':{delta:4,source:'2026 Combine — 4.35 forty. NFL.com stock up to top-40 consideration.',date:'2026-02-28'},
+
+  // ===== Pre-draft movement (pro days, visits, final mocks — Mar through Apr 23) =====
+  'Fernando Mendoza':{delta:2,source:'UNANIMOUS #1 — only consensus pick across all six expert mocks (Kiper, Jeremiah, Brugler, Yates, Ringer, B/R). Locked in to Raiders at #1.',date:'2026-04-22'},
+  'Arvell Reese':{delta:5,source:'Final mocks — consensus #2 to Jets (Brugler, B/R, Ringer, Jeremiah). Top EDGE on most boards with 4.46 + elite 10-yd split.',date:'2026-04-22'},
+  'David Bailey':{delta:3,source:'Final mocks — Kiper & Yates have him #2 to Jets. Consensus #3.7 ADP. Elite pro day rush drills.',date:'2026-04-22'},
+  'Carnell Tate':{delta:2,source:'Pro day — 4.45 forty answered combine concerns (was 4.53 at combine, Beane called him "slow"). Back into consensus top-6 after Cleveland visit. Browns mulling at #6.',date:'2026-04-20'},
+  'Jeremiyah Love':{delta:3,source:'Lone consensus R1 RB. ESPN reports Cardinals showing strong interest at #3; alternative landing spot Giants #5.',date:'2026-04-22'},
+  'Jordyn Tyson':{delta:4,source:'Stock rising into top-12. Yates & Kiper both mock to Cowboys at #12. "Best route runner in the class."',date:'2026-04-21'},
+  'Jermod McCoy':{delta:3,source:'Only consensus R1 CB. Cowboys, Rams, Ravens all in top-15. "Top-15 pick thanks to thin CB class."',date:'2026-04-20'},
+  'Kadyn Proctor':{delta:5,source:'Into consensus top-15. B/R mocks to Browns #6; Kiper #12. Massive frame + feet have him as top blocker for some evaluators.',date:'2026-04-21'},
+  'Monroe Freeling':{delta:2,source:'Four of six expert mocks slot him to Lions #17 — natural replacement for Taylor Decker.',date:'2026-04-22'},
+  'Emmanuel McNeil-Warren':{delta:1,source:'Bounced back from combine struggles in pro day workouts (was 4.52 at combine). All six expert mocks now have him in R1 (ADP 24.5). Eagles the frontrunner.',date:'2026-04-21'},
+  'Makai Lemon':{delta:2,source:'Consensus #14 (Ravens). Crisp route running + elite hands made him a consistent teens pick across boards.',date:'2026-04-22'},
+  'KC Concepcion':{delta:2,source:'Consensus #22 (Chargers). Electric separator with 4.38 speed — fits Harbaugh offense.',date:'2026-04-20'},
+  'Caleb Downs':{delta:2,source:'Consensus top-7 lock. Brugler & Yates both mock to Commanders at #7. "Slam dunk top-10 selection."',date:'2026-04-22'},
+  'Mansoor Delane':{delta:2,source:'Top CB/DB on most boards. Consensus #10 to Giants. Versatile — projects to outside or slot.',date:'2026-04-22'},
+  'Ty Simpson':{delta:3,source:'Into late R1 consensus as #2 QB behind Mendoza. Yates mocks #26 (BUF trade up), Kiper #30 (Cowboys trade up), Ringer late R1.',date:'2026-04-22'},
+  'Max Iheanachor':{delta:2,source:'Late riser — 34.5" arms and explosive pro day moved him into consensus R1 (ADP 29.7). Steelers, Dolphins, Cardinals doing homework.',date:'2026-04-21'},
+  'Zion Young':{delta:3,source:'Final mocks — Yates #25 (NE), Kiper #25 (NE). First-team All-SEC with massive 2025 leap. 10 pre-draft visits.',date:'2026-04-21'},
+  'Malachi Lawrence':{delta:2,source:'Late-R1 sleeper. B/R #32 (Seattle), Brugler #26 (Buffalo). Elite bend + twitch made scouts fans late in the process.',date:'2026-04-22'},
+  'Jadarian Price':{delta:2,source:'Squeaked into R1 in Kiper and Jeremiah final mocks (#32). Explosive complement to Love at Notre Dame.',date:'2026-04-22'},
 };
 
-// Expert consensus big board — UPDATED POST-2026 COMBINE (Feb 26 – Mar 1)
-// Key movers: Sonny Styles ↑ top-5, Dillon Thieneman ↑ 1st round lock, Kenyon Sadiq ↑ TE record,
-//             Carnell Tate ↓ (4.53 forty), Emmanuel McNeil-Warren ↓, Malachi Fields ↓ dropped.
-// Sources: Kiper (ESPN), Jeremiah (NFL Network), Brugler (The Athletic), NFL.com big board
+// Expert consensus big board — FINAL PRE-DRAFT (April 23, 2026 — draft day)
+// Consensus ADP from 6 expert mocks: B/R Scouting Dept, The Ringer (Diante Lee),
+// The Athletic (Brugler), ESPN (Kiper & Yates), NFL.com (Jeremiah).
+// Biggest risers post-combine: Arvell Reese ↑ #2, Carnell Tate recovered to #6,
+//   Jeremiyah Love top-5, Kadyn Proctor into consensus top 15, Emmanuel McNeil-Warren back in R1.
+// New additions: Max Iheanachor (ASU OT), Zion Young (Mizzou EDGE), Malachi Lawrence (UCF EDGE).
+// Only confirmed consensus: Mendoza #1 to Raiders (6/6 experts).
 const EXPERT_CONSENSUS_BIG_BOARD=[
-  'Fernando Mendoza','David Bailey','Sonny Styles','Arvell Reese','Caleb Downs','Keldric Faulk',
-  'Jeremiyah Love','Francis Mauigoa','Spencer Fano','Rueben Bain Jr.','Kenyon Sadiq','Makai Lemon',
-  'Mansoor Delane','Dillon Thieneman','Jermod McCoy','Peter Woods','Olaivavega Ioane','Omar Cooper Jr.',
-  'Carnell Tate','Jordyn Tyson','Akheem Mesidor','Denzel Boston','Cashius Howell','CJ Allen',
-  'Avieon Terrell','T.J. Parker','Monroe Freeling','Colton Hood','KC Concepcion','Caleb Lomu',
-  'Kayden McDonald','Blake Miller'
+  'Fernando Mendoza','Arvell Reese','David Bailey','Sonny Styles','Jeremiyah Love','Carnell Tate',
+  'Caleb Downs','Rueben Bain Jr.','Francis Mauigoa','Mansoor Delane','Spencer Fano','Jordyn Tyson',
+  'Jermod McCoy','Makai Lemon','Kadyn Proctor','Monroe Freeling','Kenyon Sadiq','Olaivavega Ioane',
+  'Dillon Thieneman','Keldric Faulk','Omar Cooper Jr.','KC Concepcion','Emmanuel McNeil-Warren','Akheem Mesidor',
+  'Blake Miller','Caleb Lomu','T.J. Parker','Denzel Boston','Peter Woods','Max Iheanachor',
+  'Zion Young','Malachi Lawrence'
 ];
 function getExpertConsensusRank(name){
   const idx=EXPERT_CONSENSUS_BIG_BOARD.indexOf(name);
@@ -145,28 +165,28 @@ function getPickValue(overall){
 const TEAMS=[
   {abbr:'LV',name:'Las Vegas Raiders',color:'#a5acaf',needs:['QB','OL','WR','CB','EDGE'],
    tendency:{bpa:0.3,posPrefs:['QB','WR'],conf:'Big Ten',tradeUp:true}},
-  {abbr:'NYJ',name:'New York Jets',color:'#125740',needs:['QB','CB','WR','DL','OL'],
-   tendency:{bpa:0.4,posPrefs:['QB','EDGE'],conf:'SEC',tradeUp:true}},
-  {abbr:'ARI',name:'Arizona Cardinals',color:'#97233f',needs:['QB','OL','EDGE','S','DL'],
-   tendency:{bpa:0.3,posPrefs:['QB','OL'],conf:'Big 12',tradeUp:false}},
-  {abbr:'TEN',name:'Tennessee Titans',color:'#4b92db',needs:['WR','OL','EDGE','CB','DL'],
-   tendency:{bpa:0.5,posPrefs:['OL','EDGE'],conf:'SEC',tradeUp:false}},
-  {abbr:'NYG',name:'New York Giants',color:'#0b2265',needs:['WR','OL','CB','EDGE','QB'],
-   tendency:{bpa:0.3,posPrefs:['WR','EDGE'],conf:'Big Ten',tradeUp:true}},
-  {abbr:'CLE',name:'Cleveland Browns',color:'#311d00',needs:['WR','QB','OL','EDGE','CB'],
-   tendency:{bpa:0.4,posPrefs:['QB','OL'],conf:'SEC',tradeUp:false}},
-  {abbr:'WAS',name:'Washington Commanders',color:'#5a1414',needs:['OL','DL','EDGE','CB','LB'],
-   tendency:{bpa:0.5,posPrefs:['DL','OL'],conf:'ACC',tradeUp:false}},
-  {abbr:'NO',name:'New Orleans Saints',color:'#d3bc8d',needs:['QB','WR','OL','CB','DL'],
-   tendency:{bpa:0.4,posPrefs:['QB','WR'],conf:'SEC',tradeUp:true}},
-  {abbr:'KC',name:'Kansas City Chiefs',color:'#e31837',needs:['WR','OL','EDGE','CB','DL'],
-   tendency:{bpa:0.6,posPrefs:['WR','CB'],conf:'Big 12',tradeUp:false}},
+  {abbr:'NYJ',name:'New York Jets',color:'#125740',needs:['EDGE','LB','OL','CB','WR'],
+   tendency:{bpa:0.5,posPrefs:['EDGE','LB'],conf:'Big Ten',tradeUp:false}},
+  {abbr:'ARI',name:'Arizona Cardinals',color:'#97233f',needs:['EDGE','RB','OL','S','DL'],
+   tendency:{bpa:0.4,posPrefs:['EDGE','RB'],conf:'Big 12',tradeUp:true}},
+  {abbr:'TEN',name:'Tennessee Titans',color:'#4b92db',needs:['LB','WR','OL','EDGE','CB'],
+   tendency:{bpa:0.5,posPrefs:['LB','OL'],conf:'Big Ten',tradeUp:false}},
+  {abbr:'NYG',name:'New York Giants',color:'#0b2265',needs:['RB','DB','WR','OL','EDGE'],
+   tendency:{bpa:0.3,posPrefs:['RB','DB'],conf:'Big Ten',tradeUp:true}},
+  {abbr:'CLE',name:'Cleveland Browns',color:'#311d00',needs:['WR','OT','QB','EDGE','CB'],
+   tendency:{bpa:0.4,posPrefs:['WR','OT'],conf:'Big Ten',tradeUp:true}},
+  {abbr:'WAS',name:'Washington Commanders',color:'#5a1414',needs:['S','OL','DL','EDGE','CB'],
+   tendency:{bpa:0.5,posPrefs:['S','DL'],conf:'Big Ten',tradeUp:false}},
+  {abbr:'NO',name:'New Orleans Saints',color:'#d3bc8d',needs:['EDGE','OL','WR','CB','DL'],
+   tendency:{bpa:0.5,posPrefs:['EDGE','OL'],conf:'SEC',tradeUp:true}},
+  {abbr:'KC',name:'Kansas City Chiefs',color:'#e31837',needs:['OT','DT','EDGE','WR','CB'],
+   tendency:{bpa:0.6,posPrefs:['OT','DT'],conf:'ACC',tradeUp:false}},
   {abbr:'CIN',name:'Cincinnati Bengals',color:'#fb4f14',needs:['OL','DL','EDGE','CB','LB'],
    tendency:{bpa:0.5,posPrefs:['OL','EDGE'],conf:'Big Ten',tradeUp:false}},
-  {abbr:'MIA',name:'Miami Dolphins',color:'#008e97',needs:['QB','OL','EDGE','S','LB'],
-   tendency:{bpa:0.4,posPrefs:['QB','OL'],conf:'ACC',tradeUp:true}},
-  {abbr:'DAL',name:'Dallas Cowboys',color:'#003594',needs:['OL','DL','EDGE','WR','CB'],
-   tendency:{bpa:0.5,posPrefs:['OL','DL'],conf:'Big 12',tradeUp:false}},
+  {abbr:'MIA',name:'Miami Dolphins',color:'#008e97',needs:['OL','EDGE','S','LB','QB'],
+   tendency:{bpa:0.4,posPrefs:['OL','EDGE'],conf:'Big 12',tradeUp:true}},
+  {abbr:'DAL',name:'Dallas Cowboys',color:'#003594',needs:['WR','EDGE','CB','OL','DL'],
+   tendency:{bpa:0.5,posPrefs:['WR','EDGE'],conf:'SEC',tradeUp:true}},
   {abbr:'ATL',name:'Atlanta Falcons',color:'#a71930',needs:['EDGE','DL','OL','S','CB'],
    tendency:{bpa:0.4,posPrefs:['EDGE','CB'],conf:'SEC',tradeUp:true}},
   {abbr:'BAL',name:'Baltimore Ravens',color:'#241773',needs:['OL','WR','CB','EDGE','S'],
@@ -627,6 +647,11 @@ const TOP_PROSPECTS=[
  strengths:['Massive frame with outstanding length','Versatile — tackle and guard','Athletic for 6-7, 325','Improved steadily through college'],
  weaknesses:['Needs to improve anchor','Can be beaten by inside moves','Occasionally oversets in pass pro','Needs more consistency'],
  combine:{forty:null,bench:null,vert:35.5,broad:111,cone:null,shuttle:null,_status:'official'}},
+{name:'Malachi Lawrence',pos:'EDGE',school:'UCF',grade:80,height:'6-4',weight:258,
+ bio:'Lawrence is a twitchy, bendy EDGE from UCF who emerged late in the process. B/R mocks him #32 to Seattle, Brugler has him #26. Wins with elite first step and flexible hips around the corner. Still developing but high-ceiling pick.',
+ strengths:['Elite bend and ankle flex around the arc','Twitchy first step','Good motor and pursuit','Productive vs Power-5 competition'],
+ weaknesses:['Needs to add play strength','Can be overpowered by bigger tackles','Group of 5 level of competition','Run defense needs work'],
+ combine:{forty:4.56,bench:18,vert:36,broad:121,cone:7.02,shuttle:null,_status:'official'}},
 ];
 
 // ===== BIO GENERATION SYSTEM =====
